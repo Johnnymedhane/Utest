@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://platform.utest.com/testcycles/391675/issues/5833656 -->
+<html ng-controller="AppController" lang="en" class=" geolocation svg localstorage sessionstorage audio canvas canvastext video webgl no-emoji inlinesvg supports svgclippaths smil nthchild cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside cssfilters flexbox flexboxlegacy"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-datepicker-popup.dropdown-menu{display:block;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style>@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><style>@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid:not(.vjs-audio-only-mode) {
+        padding-top: 56.25%
+      }
+    </style><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link rel="preconnect" href="https://use.typekit.net/" crossorigin="">
+  <link rel="dns-prefetch" href="https://ajax.googleapis.com/">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+  <!--<base href="/">--><base href=".">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="cleartype" content="on">
+  <style type="text/css">@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV0exoMUdjFXmSU_.woff) format('woff');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWVQexoMUdjFXmSU_.woff) format('woff');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWVwexoMUdjFXmSU_.woff) format('woff');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWVMexoMUdjFXmSU_.woff) format('woff');unicode-range:U+0370-03FF;}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWVIexoMUdjFXmSU_.woff) format('woff');unicode-range:U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV8exoMUdjFXmSU_.woff) format('woff');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exoMUdjFXmSU_.woff) format('woff');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWVAexoMUdjFXmQ.woff) format('woff');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');unicode-range:U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');unicode-range:U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');unicode-range:U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');unicode-range:U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');unicode-range:U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+
+  <title>Test Cycle - Issue Details - uTest</title>
+  <meta name="keywords" content="software,testing">
+  <meta name="description" content="">
+  <meta property="og:title" content="uTest">
+  <meta property="og:description" content="">
+
+  <!-- CSS for Proxima Nova font -->
+  <style type="text/css">@import url("https://p.typekit.net/p.css?s=1&k=emc4mjh&ht=tk&f=139.140.169.171.173.174.175.176.5474.5475.25136.25137&a=19819204&app=typekit&e=css");@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/d82519/00000000000000003b9b306a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"),url("https://use.typekit.net/af/d82519/00000000000000003b9b306a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"),url("https://use.typekit.net/af/d82519/00000000000000003b9b306a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");font-display:auto;font-style:normal;font-weight:800;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/c47696/00000000000000003b9b305e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff2"),url("https://use.typekit.net/af/c47696/00000000000000003b9b305e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff"),url("https://use.typekit.net/af/c47696/00000000000000003b9b305e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("opentype");font-display:auto;font-style:normal;font-weight:100;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/f7d492/00000000000000003b9b3067/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff2"),url("https://use.typekit.net/af/f7d492/00000000000000003b9b3067/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff"),url("https://use.typekit.net/af/f7d492/00000000000000003b9b3067/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("opentype");font-display:auto;font-style:italic;font-weight:600;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/cebe0e/00000000000000003b9b3060/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/cebe0e/00000000000000003b9b3060/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/cebe0e/00000000000000003b9b3060/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");font-display:auto;font-style:normal;font-weight:300;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/40ff7f/00000000000000003b9b3061/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff2"),url("https://use.typekit.net/af/40ff7f/00000000000000003b9b3061/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff"),url("https://use.typekit.net/af/40ff7f/00000000000000003b9b3061/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("opentype");font-display:auto;font-style:italic;font-weight:300;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");font-display:auto;font-style:normal;font-weight:500;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/5b5251/00000000000000003b9b3065/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff2"),url("https://use.typekit.net/af/5b5251/00000000000000003b9b3065/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff"),url("https://use.typekit.net/af/5b5251/00000000000000003b9b3065/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("opentype");font-display:auto;font-style:italic;font-weight:500;font-stretch:normal;}.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}</style>
+  <style type="text/css">@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
+
+    <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://platform.utest.com/assets/images/branding-icons/apple-touch-icon.png?v=4">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://platform.utest.com/assets/images/branding-icons/favicon-32x32.png?v=4">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://platform.utest.com/assets/images/branding-icons/favicon-16x16.png?v=4">
+  <link rel="manifest" href="https://platform.utest.com/assets/images/branding-icons/site.webmanifest?v=4" crossorigin="use-credentials">
+  <link rel="mask-icon" href="https://platform.utest.com/assets/images/branding-icons/safari-pinned-tab.svg?v=4" color="#5bbad5">
+  <link rel="shortcut icon" href="https://platform.utest.com/assets/images/branding-icons/favicon.ico?v=4">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/assets/images/branding-icons/browserconfig.xml?v=4">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Polyfill for Array.prototype.include() -->
+  <script async="" src="./Test Cycle - Issue Details_files/analytics.js.download"></script><script>
+    // https://tc39.github.io/ecma262/#sec-array.prototype.includes
+    if (!Array.prototype.includes) {
+      Object.defineProperty(Array.prototype, 'includes', {
+        value: function(valueToFind, fromIndex) {
+
+          if (this == null) {
+            throw new TypeError('"this" is null or not defined');
+          }
+
+          // 1. Let O be ? ToObject(this value).
+          var o = Object(this);
+
+          // 2. Let len be ? ToLength(? Get(O, "length")).
+          var len = o.length >>> 0;
+
+          // 3. If len is 0, return false.
+          if (len === 0) {
+            return false;
+          }
+
+          // 4. Let n be ? ToInteger(fromIndex).
+          //    (If fromIndex is undefined, this step produces the value 0.)
+          var n = fromIndex | 0;
+
+          // 5. If n ≥ 0, then
+          //  a. Let k be n.
+          // 6. Else n < 0,
+          //  a. Let k be len + n.
+          //  b. If k < 0, let k be 0.
+          var k = Math.max(n >= 0 ? n : len - Math.abs(n), 0);
+
+          function sameValueZero(x, y) {
+            return x === y || (typeof x === 'number' && typeof y === 'number' && isNaN(x) && isNaN(y));
+          }
+
+          // 7. Repeat, while k < len
+          while (k < len) {
+            // a. Let elementK be the result of ? Get(O, ! ToString(k)).
+            // b. If SameValueZero(valueToFind, elementK) is true, return true.
+            if (sameValueZero(o[k], valueToFind)) {
+              return true;
+            }
+            // c. Increase k by 1.
+            k++;
+          }
+
+          // 8. Return false
+          return false;
+        }
+      });
+    }
+  </script>
+
+  <!-- Google analytics-->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new
+                      Date(); a = s.createElement(o),
+              m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  </script>
+
+
+<style>@import"//fonts.googleapis.com/css?family=Roboto:100,300,300italic,400,500,700,900";@import"https://use.typekit.net/emc4mjh.css";@import"https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap";html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}@media print{*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;box-shadow:none!important}}*{box-sizing:border-box}:after,:before{box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}@charset "UTF-8";@charset "UTF-8";html{min-height:100%}body{background:#fff;color:#2e3436;font-family:Roboto,Arial,Helvetica,sans-serif;font-size:13px;font-weight:400;min-height:100vh}@charset "UTF-8";body{font-weight:400;overflow-y:hidden;-webkit-font-smoothing:antialiased;font-family:proxima-nova,sans-serif;line-height:1.5}@media only screen and (max-width: 655px){body{-webkit-overflow-scrolling:touch}}</style><link rel="stylesheet" href="./Test Cycle - Issue Details_files/styles.77c29b0f1dddf547.css" media="all" onload="this.media=&#39;all&#39;"><noscript><link rel="stylesheet" href="styles.77c29b0f1dddf547.css"></noscript><style></style><style type="text/css"></style><style>[_nghost-xun-c283]{display:block}.app-pending-container[_ngcontent-xun-c283]{height:100vh;display:flex;align-items:center;justify-content:center}</style><style>[_nghost-xun-c89]{height:45px;display:flex;align-items:center;justify-content:center}[_nghost-xun-c89]   .pending-indicator[_ngcontent-xun-c89]{border:4px solid #F0F0F0;border-top-color:#0272b4;border-radius:50%;animation-name:spinner;animation-duration:1.1s;animation-timing-function:linear;animation-iteration-count:infinite;width:28px;height:28px;box-sizing:border-box}[inline][_nghost-xun-c89]{display:inline}[inline][_nghost-xun-c89]   .pending-indicator[_ngcontent-xun-c89]{display:inline-block;height:1em;width:1em}.as-overlay[_nghost-xun-c89]{z-index:1;position:absolute;height:100%;width:100%;top:0;left:0;background:rgba(255,255,255,.6)}@keyframes spinner{0%{transform:rotate(0)}to{transform:rotate(360deg)}}</style><style>.faded-text[_ngcontent-xun-c295]{font-size:11px;font-style:italic;color:#66696b}[_nghost-xun-c295]{display:block;background:#282828;width:250px;height:100vh;color:#e6e7e8;font-size:16px}.pending-container[_ngcontent-xun-c295]{display:flex;height:100%;justify-content:center;align-items:center}</style><style>[_nghost-xun-c82]{display:block;padding:24px 50px}</style><style>[_nghost-xun-c293]{display:block;height:100%}</style><style>.faded-text[_ngcontent-xun-c285]{font-size:11px;font-style:italic;color:#66696b}[_nghost-xun-c285]{display:block;height:100%}.navigation[_ngcontent-xun-c285]{display:flex;flex-direction:column;height:100%}.scrollable[_ngcontent-xun-c285]{flex:1 1 auto;display:flex;flex-direction:column;overflow-y:auto;overflow-x:hidden}</style><style>[_nghost-xun-c286]{display:flex;justify-content:center;align-items:center;min-height:39px;padding-top:15px;padding-bottom:15px;box-sizing:content-box;border-bottom:solid 1px #404041}[_nghost-xun-c286]     a:focus{outline:1px dashed #FFF!important}[_nghost-xun-c286]     img{object-fit:scale-down;object-position:center;vertical-align:middle}</style><style>[_nghost-xun-c290]{display:block}.navigation-group-items-container[_ngcontent-xun-c290]{display:none}.navigation-group-items-container.expanded[_ngcontent-xun-c290]{display:block}</style><style>.faded-text[_ngcontent-xun-c287]{font-size:11px;font-style:italic;color:#66696b}[_nghost-xun-c287]{display:flex}.navigation-dropdown-handle--content[_ngcontent-xun-c287]{flex:1 1 auto;min-width:0}.navigation-dropdown__trigger-container[_ngcontent-xun-c287]{display:flex;align-items:center;width:24px;margin-right:20px}.navigation-dropdown__trigger-container[_ngcontent-xun-c287]   .navigation-dropdown__trigger[_ngcontent-xun-c287]{display:flex;align-items:center;justify-content:center;color:#d2d3d4;padding:0;background:none;border:none;width:24px;height:24px;line-height:1}.navigation-dropdown__trigger-container[_ngcontent-xun-c287]   .navigation-dropdown__trigger[_ngcontent-xun-c287]:focus, .navigation-dropdown__trigger-container[_ngcontent-xun-c287]   .navigation-dropdown__trigger[_ngcontent-xun-c287]:hover{outline:1px dashed #FFF!important}.navigation-dropdown__trigger-container[_ngcontent-xun-c287]   .navigation-dropdown__trigger[_ngcontent-xun-c287]   .arrow[_ngcontent-xun-c287]{padding-top:2px;font-size:19.2px}</style><style>.faded-text[_ngcontent-xun-c284]{font-size:11px;font-style:italic;color:#66696b}[_nghost-xun-c284]{display:flex;padding-top:15px;padding-left:15px;padding-bottom:15px}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]{flex:0 0 auto;position:relative}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .nav-sidebar-user-card__image[_ngcontent-xun-c284]{border-radius:50%}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]{position:absolute;top:3px;right:0;text-align:right;font-size:0;transform:translate(25%)}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge[_ngcontent-xun-c284]{border-radius:50%;width:16px;height:16px;border:2px solid #FFFFFF;color:#fff;right:0;font-size:10px;display:inline-block;text-align:center;margin:0 1px;line-height:12px}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-u[_ngcontent-xun-c284]{background:#00A8CC}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-u[_ngcontent-xun-c284]:after{content:"U";font-weight:700}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-m[_ngcontent-xun-c284]{background:#FDB900;color:#262626}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-m[_ngcontent-xun-c284]:after{content:"M";font-weight:700}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-pm[_ngcontent-xun-c284]{background:#22C064}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-pm[_ngcontent-xun-c284]:after{content:"PM";font-size:7px;vertical-align:middle;font-weight:700}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-ttl[_ngcontent-xun-c284]{background:#FA8513}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-ttl[_ngcontent-xun-c284]:after{content:"TTL";font-size:7px;vertical-align:middle;font-weight:700}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-a[_ngcontent-xun-c284]{background:#05A88B}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-a[_ngcontent-xun-c284]:after{content:"A";font-weight:700}.nav-sidebar-user-card-info[_ngcontent-xun-c284]{padding:0 10px;flex:1 1 auto;min-width:0}.nav-sidebar-user-card-info__name[_ngcontent-xun-c284]{font-size:14.4px;overflow-wrap:break-word}.nav-sidebar-user-card-info__details[_ngcontent-xun-c284]{font-size:12.8px;color:#d2d3d4}.nav-sidebar-user-card-rating[_ngcontent-xun-c284]{background-color:#fff;background:linear-gradient(270deg,#FFFFFF 0%);color:#282828;border-radius:20px;margin-top:5px;display:inline-block;text-align:center;text-transform:uppercase;padding:0 10px;font-size:12.8px;font-weight:700}.nav-sidebar-user-card-rating.nav-sidebar-user-card-rating--unrated[_ngcontent-xun-c284]{background-color:#fff;color:#282828}.nav-sidebar-user-card-rating.nav-sidebar-user-card-rating--rated[_ngcontent-xun-c284]{background-color:#d2d3d4;color:#404041}.nav-sidebar-user-card-rating.nav-sidebar-user-card-rating--proven[_ngcontent-xun-c284]{background-color:#a29a8e;color:#fff}.nav-sidebar-user-card-rating.nav-sidebar-user-card-rating--bronze[_ngcontent-xun-c284]{background:linear-gradient(270deg,#A95911 0%,#DE9715 60%);color:#fff}.nav-sidebar-user-card-rating.nav-sidebar-user-card-rating--silver[_ngcontent-xun-c284]{background:linear-gradient(90deg,#FFFFFF 0%,#B2B9C2 60%);color:#282828}.nav-sidebar-user-card-rating.nav-sidebar-user-card-rating--gold[_ngcontent-xun-c284]{background:linear-gradient(270deg,#E4880B 0%,#FCBA00 60%);color:#282828}</style><style>.faded-text[_ngcontent-xun-c288]{font-size:11px;font-style:italic;color:#66696b}[_nghost-xun-c288]{display:flex;height:42px;color:#d2d3d4}[_nghost-xun-c288]:focus{color:inherit;outline:1px dashed #FFF!important}[_nghost-xun-c288]:hover{color:inherit;text-decoration:underline}[_nghost-xun-c288]   .navigation-item__icon[_ngcontent-xun-c288]{margin:12px 20px 0 22px}[_nghost-xun-c288]   .navigation-item__icon[_ngcontent-xun-c288]   i[_ngcontent-xun-c288]{font-size:19.2px}[_nghost-xun-c288]   .navigation-item__text[_ngcontent-xun-c288]{font-size:16px;font-weight:500;padding:10px 0}.active[_nghost-xun-c288]{border-left:solid 3px #027CC2;background:#404041;color:#fff;font-weight:700}  .ta-navigation-item-wrapper.active{border-left:solid 3px #027CC2;background:#404041}  .ta-navigation-item-wrapper.active .ta-navigation-item{color:#fff;font-weight:700}</style><style>[_nghost-xun-c291]{display:block;border-bottom:solid 1px #404041}[_nghost-xun-c291]     button.ta-navigation-group-item{margin:0;border:none;background:none}[_nghost-xun-c291]     .ta-navigation-group-item{display:block;font-size:14px;padding:6px 0 6px 61px;color:#9fa1a3}[_nghost-xun-c291]     .ta-navigation-group-item:focus, [_nghost-xun-c291]     .ta-navigation-group-item:hover{outline:none;text-decoration:underline}[_nghost-xun-c291]     .ta-navigation-group-item.active{background-color:#404041;color:#fff;font-weight:700}</style><style>.faded-text[_ngcontent-xun-c289]{font-size:11px;font-style:italic;color:#66696b}[_nghost-xun-c289]{margin-top:auto;display:block;padding:24px;border-top:solid 1px #404041;font-weight:500;font-size:14.4px}[_nghost-xun-c289]     a{padding:2px 0;color:#d2d3d4;display:block}[_nghost-xun-c289]     a:hover, [_nghost-xun-c289]     a:active, [_nghost-xun-c289]     a:focus{outline:none;text-decoration:underline}.navigation-footer__copyright[_ngcontent-xun-c289]{margin-top:30px}</style><style>.mat-icon{-webkit-user-select:none;user-select:none;background-repeat:no-repeat;display:inline-block;fill:currentColor;height:24px;width:24px;overflow:hidden}.mat-icon.mat-icon-inline{font-size:inherit;height:inherit;line-height:inherit;width:inherit}.mat-icon.mat-ligature-font[fontIcon]::before{content:attr(fontIcon)}[dir=rtl] .mat-icon-rtl-mirror{transform:scale(-1, 1)}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon{display:block}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button .mat-icon{margin:auto}</style><style>[_nghost-xun-c84]{display:block;padding:24px 50px}</style><style>[_nghost-xun-c88]{display:block;padding:24px 50px}</style><style>[_nghost-xun-c95]{display:block;padding:24px 50px}</style><style>[_nghost-xun-c93]{display:block}.scroll-to-top-btn[_ngcontent-xun-c93]{padding:0 20px;border:none;background:none;color:#2779c3;transition:all .1s linear}.scroll-to-top-btn[_ngcontent-xun-c93]:focus{outline:none;color:#015e93;text-decoration:underline}.scroll-to-top-btn[_ngcontent-xun-c93]:hover{color:#015e93;text-decoration:underline}</style><style>[_nghost-xun-c100]{display:block;padding:24px 50px}</style><style>.faded-text[_ngcontent-xun-c98]{font-size:11px;font-style:italic;color:#66696b}[_nghost-xun-c98]{display:block}.collapsible-tabs-container[_ngcontent-xun-c98]{border-color:#ffffff12;border-width:1px 0 0 0;background-color:transparent;padding:0 50px}.tabs-header--mobile[_ngcontent-xun-c98]{display:flex;align-items:center}.tabs-header--mobile[_ngcontent-xun-c98]   .tabs-header__title--mobile[_ngcontent-xun-c98]{flex:1 0 auto;font-size:1.1em;padding-top:8px;padding-bottom:8px}.tabs-header--mobile[_ngcontent-xun-c98]   .tabs-toggle-btn[_ngcontent-xun-c98]{border:none;background:transparent;margin:0}.tabs-header--mobile[_ngcontent-xun-c98]   .tabs-toggle-btn[_ngcontent-xun-c98]   .tabs-toggle-btn-icon[_ngcontent-xun-c98]{margin-right:4px}@media screen and (min-width: 768px){.tabs-header--mobile[_ngcontent-xun-c98]{display:none}}@media screen and (max-width: 768px){.collapsible-tabs-container[_ngcontent-xun-c98]{padding:0 20px}.collapsed--mobile[_ngcontent-xun-c98]{display:none}}</style><style>[_nghost-xun-c96]{display:flex;flex-wrap:wrap;min-height:40px}@media screen and (max-width: 990px){[_nghost-xun-c96]{overflow-x:hidden}}</style><style>.faded-text[_ngcontent-xun-c97]{font-size:11px;font-style:italic;color:#66696b}[_nghost-xun-c97]{display:contents}.legacy-tab-btn[_ngcontent-xun-c97]{transition:.05s box-shadow linear;padding:10px 0 11px;margin:0 40px 0 0;color:#59595c;background-color:transparent;box-shadow:inset 0 0 0 0 transparent;text-transform:uppercase;font-size:11px;border:none}.legacy-tab-btn[_ngcontent-xun-c97]:hover:not(:disabled), .legacy-tab-btn[_ngcontent-xun-c97]:focus{box-shadow:inset 0 -3px #027cc2;color:#0270af;outline:0;background-color:transparent}.legacy-tab-btn.legacy-tab-btn--active[_ngcontent-xun-c97]{color:#0270af;box-shadow:inset 0 -3px #027cc2}.legacy-tab-btn[_ngcontent-xun-c97]:disabled{opacity:.5;background-color:transparent;cursor:not-allowed}.legacy-tab-btn[_ngcontent-xun-c97]:disabled:hover, .legacy-tab-btn[_ngcontent-xun-c97]:disabled:focus{background-color:transparent;box-shadow:none}</style><style>[_nghost-xun-c154]{display:block}</style><style>[_nghost-xun-c153]{display:block}</style><style>[_nghost-xun-c152]{display:block}</style><style>[_nghost-xun-c150]{display:block}</style><style>[_nghost-xun-c146]{display:block}</style><style>[_nghost-xun-c145]{display:block}</style><style>[_nghost-xun-c143]{display:block}</style><style>.share-button-host[_ngcontent-xun-c298]{display:flex}  .attachment-share-message{color:#fff;background-color:#000;font-size:12px;font-weight:600;line-height:16px;text-align:center;border:1px solid #E6E6E6;border-radius:4px;box-shadow:0 1px 2px #00000026;padding:8px 12px}  .attachment-share-message a{color:#489dcf;text-decoration:none}</style></head>
+<body class="nav-menu-open">
+  <tester-app _nghost-xun-c283="" ng-version="14.2.12">
+
+
+  <content-and-sidebar _ngcontent-xun-c283="" class="content-and-sidebar">
+<div class="flex-main page-main">
+  <div>
+    <button class="nav-sidebar-toggle" ng-click="$ctrl.toggleNavMenu()" aria-label="close sidebar navigation" aria-expanded="true">
+      <div ng-show="$ctrl.hideSidebar == true" aria-hidden="true" class="ng-hide">
+        <i class="material-icons">menu</i>
+      </div>
+      <div ng-show="$ctrl.hideSidebar == false" aria-hidden="false">
+        <i class="material-icons nav-sidebar-toggle--close">close</i>
+      </div>
+    </button>
+  </div>
+  <div id="skiptocontent"><a href="https://platform.utest.com/#mainContent" class="skip" ng-keydown="$ctrl.handleSkipKeydown($event)">skip to main content</a></div>
+  <ta-navigation-sidebar class="nav-sidebar" ng-hide="$ctrl.hideSidebar" [show-content]="$ctrl.showContent" _nghost-xun-c295="" ng-version="14.2.12" aria-hidden="false">
+  <ta-default-navigation _ngcontent-xun-c295="" _nghost-xun-c293=""><ta-navigation _ngcontent-xun-c293="" _nghost-xun-c285=""><nav _ngcontent-xun-c285="" class="navigation">
+  <ta-navigation-logo _ngcontent-xun-c293="" _nghost-xun-c286="">
+    <a _ngcontent-xun-c293="" href="https://www.utest.com/">
+      <img _ngcontent-xun-c293="" src="./Test Cycle - Issue Details_files/uTestLogoNav.svg" width="80" height="28" alt="uTest">
+    </a>
+  
+</ta-navigation-logo>
+
+  <div _ngcontent-xun-c285="" class="scrollable">
+    
+  
+
+  <ta-navigation-group _ngcontent-xun-c293="" label="User" _nghost-xun-c290=""><ta-navigation-group-handle _ngcontent-xun-c293="" _nghost-xun-c287=""><div _ngcontent-xun-c287="" class="navigation-dropdown-handle--content">
+  
+      <ta-user-card _ngcontent-xun-c293="" _nghost-xun-c284=""><div _ngcontent-xun-c284="" class="nav-sidebar-user-card__image-container">
+  <img _ngcontent-xun-c284="" width="32" height="32" class="nav-sidebar-user-card__image" src="./Test Cycle - Issue Details_files/91e95fb32ee23b4522978726bceb4068.jpg">
+
+  <span _ngcontent-xun-c284="" class="avatar-badges-wrapper">
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+  </span>
+</div>
+<div _ngcontent-xun-c284="" class="nav-sidebar-user-card-info">
+  <div _ngcontent-xun-c284="" class="nav-sidebar-user-card-info__name">
+    johnny medhane
+  </div>
+  <div _ngcontent-xun-c284="" class="nav-sidebar-user-card-info__details">
+    Tester ID: 947881
+  </div>
+  <div _ngcontent-xun-c284="" class="nav-sidebar-user-card-rating nav-sidebar-user-card-rating--rated" aria-label="Your Tester Rating: rated">
+    rated
+  </div>
+</div>
+</ta-user-card>
+    
+</div>
+
+<div _ngcontent-xun-c287="" class="navigation-dropdown__trigger-container">
+  <button _ngcontent-xun-c287="" type="button" class="navigation-dropdown__trigger" aria-label="Expand to see undefined menu" aria-expanded="false">
+    <!---->
+
+    <mat-icon _ngcontent-xun-c287="" role="img" inline="" class="mat-icon notranslate arrow material-icons mat-ligature-font mat-icon-inline mat-icon-no-color" aria-hidden="true" aria-label="Expand undefined Menu" data-mat-icon-type="font">
+      expand_more
+    </mat-icon><!---->
+  </button>
+</div>
+</ta-navigation-group-handle>
+
+<div _ngcontent-xun-c290="" class="navigation-group-items-container">
+  <ta-navigation-group-items _ngcontent-xun-c293="" _nghost-xun-c291="">
+      <a _ngcontent-xun-c293="" tanavigationgroupitem="" uisref="account.myProfile" href="https://platform.utest.com/account/my-profile" class="ta-navigation-group-item">Tester Profile</a>
+      <a _ngcontent-xun-c293="" tanavigationgroupitem="" target="_self" href="https://www.utest.com/profile/p947881/about" class="ta-navigation-group-item">Community Profile</a>
+      <a _ngcontent-xun-c293="" tanavigationgroupitem="" uisref="account.payments" href="https://platform.utest.com/account/payments" class="ta-navigation-group-item">Payments</a>
+      <a _ngcontent-xun-c293="" tanavigationgroupitem="" uisref="account.advanced" href="https://platform.utest.com/account/advanced" class="ta-navigation-group-item">Advanced Settings</a>
+
+      <button _ngcontent-xun-c293="" type="button" tanavigationgroupitem="" class="ta-navigation-group-item">Sign Out</button>
+    
+</ta-navigation-group-items><!---->
+</div>
+</ta-navigation-group>
+
+  <a _ngcontent-xun-c293="" tanavigationitem="" icon="home" _nghost-xun-c288="" href="https://www.utest.com/"><span _ngcontent-xun-c288="" class="navigation-item__icon">
+  <mat-icon _ngcontent-xun-c288="" role="img" aria-hidden="true" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" data-mat-icon-type="font">home</mat-icon><!---->
+</span>
+<span _ngcontent-xun-c288="" class="navigation-item__text">
+  Home
+</span>
+</a>
+  <a _ngcontent-xun-c293="" tanavigationitem="" icon="school" _nghost-xun-c288="" href="https://www.utest.com/academy"><span _ngcontent-xun-c288="" class="navigation-item__icon">
+  <mat-icon _ngcontent-xun-c288="" role="img" aria-hidden="true" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" data-mat-icon-type="font">school</mat-icon><!---->
+</span>
+<span _ngcontent-xun-c288="" class="navigation-item__text">
+  Academy
+</span>
+</a>
+
+  <ta-navigation-group _ngcontent-xun-c293="" label="Projects" _nghost-xun-c290=""><ta-navigation-group-handle _ngcontent-xun-c293="" _nghost-xun-c287="" class="ta-navigation-item-wrapper active"><div _ngcontent-xun-c287="" class="navigation-dropdown-handle--content">
+  
+      <a _ngcontent-xun-c293="" tanavigationitem="" icon="trip_origin" uisref="dashboard" _nghost-xun-c288="" href="https://platform.utest.com/dashboard" class="ta-navigation-item"><span _ngcontent-xun-c288="" class="navigation-item__icon">
+  <mat-icon _ngcontent-xun-c288="" role="img" aria-hidden="true" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" data-mat-icon-type="font">trip_origin</mat-icon><!---->
+</span>
+<span _ngcontent-xun-c288="" class="navigation-item__text">
+  Projects
+</span>
+</a>
+    
+</div>
+
+<div _ngcontent-xun-c287="" class="navigation-dropdown__trigger-container">
+  <button _ngcontent-xun-c287="" type="button" class="navigation-dropdown__trigger" aria-label="Expand to see undefined menu" aria-expanded="true">
+    <mat-icon _ngcontent-xun-c287="" role="img" inline="" class="mat-icon notranslate arrow material-icons mat-ligature-font mat-icon-inline mat-icon-no-color" aria-hidden="true" aria-label="Hide undefined Menu" data-mat-icon-type="font">
+      expand_less
+    </mat-icon><!---->
+
+    <!---->
+  </button>
+</div>
+</ta-navigation-group-handle>
+
+<div _ngcontent-xun-c290="" class="navigation-group-items-container expanded">
+  <ta-navigation-group-items _ngcontent-xun-c293="" _nghost-xun-c291="">
+      <a _ngcontent-xun-c293="" tanavigationgroupitem="" uisref="testcycles" href="https://platform.utest.com/testcycles" class="ta-navigation-group-item">
+        Test Cycles
+        <a _ngcontent-xun-c293="" uisref="testcycle" hidden="" href="https://platform.utest.com/"></a>
+      </a>
+
+      <a _ngcontent-xun-c293="" tanavigationgroupitem="" uisref="issues" href="https://platform.utest.com/issues" class="ta-navigation-group-item">Issues</a>
+      <a _ngcontent-xun-c293="" tanavigationgroupitem="" uisref="testcases" href="https://platform.utest.com/testcases" class="ta-navigation-group-item">Test Cases</a>
+      <a _ngcontent-xun-c293="" tanavigationgroupitem="" target="_self" href="https://www.utest.com/projects" class="ta-navigation-group-item">Projects Board</a>
+    
+</ta-navigation-group-items>
+</div>
+</ta-navigation-group>
+
+  <a _ngcontent-xun-c293="" tanavigationitem="" icon="people" _nghost-xun-c288="" href="https://www.utest.com/community"><span _ngcontent-xun-c288="" class="navigation-item__icon">
+  <mat-icon _ngcontent-xun-c288="" role="img" aria-hidden="true" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" data-mat-icon-type="font">people</mat-icon><!---->
+</span>
+<span _ngcontent-xun-c288="" class="navigation-item__text">
+  Community
+</span>
+</a>
+
+  <!---->
+
+  <ta-navigation-footer _ngcontent-xun-c293="" _nghost-xun-c289="" role="contentinfo">
+    <a _ngcontent-xun-c293="" href="https://www.utest.com/utest-guidelines">uTest Guidelines</a>
+    <a _ngcontent-xun-c293="" href="https://www.utest.com/terms-and-conditions">Terms &amp; Conditions</a>
+    <a _ngcontent-xun-c293="" href="https://www.utest.com/privacy-policy">Privacy Policy</a>
+  
+
+<div _ngcontent-xun-c289="" class="navigation-footer__copyright">
+  © 2023 Applause App Quality, Inc.
+</div>
+</ta-navigation-footer>
+
+  </div>
+</nav>
+</ta-navigation>
+</ta-default-navigation><!---->
+
+  <!---->
+<!----><!---->
+
+<!---->
+
+</ta-navigation-sidebar>
+
+  <!-- main container -->
+  <!----><div class="ntux-wrapper sidebar-open--ntux" ng-class="{&#39;sidebar-open--ntux&#39; : !$ctrl.hideSidebar}" ng-if="$ctrl.showContent">
+    <alert-header>
+<div class="ntux-alert-header">
+  <!---->
+</div>
+</alert-header>
+    <nav-header>
+<div class="ntux-nav-header" id="nav-bar-container">
+  <div class="container-fluid">
+    <div class="clearfix">
+      <!----><div ng-if="!$ctrl.belongsToPrivateCommunity">
+        <form class="ntux-nav-header-search ng-pristine ng-valid" ng-submit="$ctrl.submit()">
+          <span class="ntux-nav-header-search__button"><i class="material-icons">search</i></span>
+          <input class="ntux-nav-header-search__input ng-pristine ng-untouched ng-valid ng-empty" type="text" ng-model="$ctrl.query" placeholder="Search" aria-label="Search" aria-invalid="false">
+        </form>
+      </div><!---->
+      <div class="ntux-nav-header-buttons">
+        <nav-header-chat url="$ctrl.chatUrl">
+<div class="ntux-nav-header-buttons__item ntux-nav-header-chat">
+  <a class="ntux-nav-header-buttons__link ntux-nav-header-chat__link" ng-href="https://chat.utest.com" target="_blank" rel="noopener" ng-click="$ctrl.clearUnreadChatNotifications()" aria-label="Chat" href="https://chat.utest.com/">
+    <i aria-hidden="true" class="material-icons">chat_bubble</i>
+  </a>
+  <div class="ntux-nav-header-chat__dot ng-hide" ng-class="{&#39;ntux-nav-header-chat__dot--with-number&#39;: $ctrl.unreadMessageCount &gt; 0}" ng-show="$ctrl.hasUnreadMessages" aria-hidden="true"></div>
+</div>
+</nav-header-chat>
+        <!----><nav-header-notifications ng-if="!$ctrl.belongsToPrivateCommunity">
+<div class="ntux-nav-header-buttons__item ntux-nav-header-notifications">
+  <a class="ntux-nav-header-buttons__link" ng-href="https://www.utest.com/activity" aria-label="Notifications, new notifications" href="https://www.utest.com/activity">
+    <i class="material-icons" aria-hidden="true">notifications</i>
+  </a>
+  <div class="ntux-nav-header-notifications__dot" ng-show="$ctrl.hasUnreadActivities" aria-hidden="false"></div>
+</div>
+</nav-header-notifications><!---->
+        <nav-header-help>
+<div class="ntux-nav-header-buttons__item ntux-nav-header-help">
+  <a class="ntux-nav-header-buttons__link" href="https://support.utest.com/" target="_blank" rel="noopener">
+    <i class="material-icons">help</i>
+  </a>
+</div>
+</nav-header-help>
+      </div>
+    </div>
+  </div>
+</div>
+</nav-header>
+    <main id="mainContent" role="main" class="flex-section page-content" tabindex="-1">
+      <div class="tester-app">
+        <ng-transclude>
+    <ui-view _ngcontent-xun-c283=""><ta-test-cycle-route _nghost-xun-c100=""><!---->
+<div _ngcontent-xun-c100="">
+  <div _ngcontent-xun-c100="" class="testcycle main-page-content">
+    <div _ngcontent-xun-c100="" id="the-testcycle-header" class="testcycle-header">
+      <test-cycle-header _ngcontent-xun-c100="">
+<section id="topOfPage" class="testcycle-header-info">
+    <div class="issue-action-holder">
+        <!---->
+    </div>
+    <div class="issue-title testcycle-title">
+        <span class="issue-meta-id">
+            <a href="javascript:" ng-click="ctrl.navigateToTestCycleOverview()" aria-label="Test Cycle ID: #391675">#391675</a>
+            <span class="issue-meta-separator"></span>
+            <!----><span ng-if="ctrl.getIsPendingActivationOrNew()" aria-label="Activates on November 23rd, 2022 at 1pm "><span aria-hidden="true">11/23/2022 1:00pm  - </span></span><!---->
+            <!---->
+            <!----><span ng-if="ctrl.testCycleInfo.deactivationDate" aria-label="Deactivates on November 25th, 2022 at 11am  - 6 months ago"><span aria-hidden="true">
+                11/25/2022 11:07am  -
+                <strong ng-show="ctrl.getLocksSoon()" aria-hidden="false"><i class="fa fa-clock-o"></i> 6 months ago</strong>
+                <span ng-show="!ctrl.getLocksSoon()" aria-hidden="true" class="ng-hide">6 months ago</span></span>
+            </span><!---->
+            <!---->
+        </span>
+        <h1>uTest Academy - November 21, 2022 - Challenge - Group 5 / <span class="issue-title-type">Test Cycle</span></h1>
+    </div>
+
+    <div ng-attr-title="{{ctrl.getReportIssueTitle()}}" title="">
+        <!-- TODO: Create directive to create same as onerror="$(this).parent().hide()" on image-->
+        <!-- Note: (SP) this mechanism for hiding lack of an image was used in the old app for avatars. now we have the avatar filter to return a default image if there is none. i'm not sure this onerror was really here in the old app to catch an error as much as be a hacky way to hide if no image has been uploaded. if so, there's a better way. -->
+        <!---->
+    </div>
+
+    <a href="javascript:;" ng-click="ctrl.tcHeadStatusCollapse = !ctrl.tcHeadStatusCollapse" class="testcycle-header-status-toggle">Toggle Info</a>
+    <div class="testcycle-header-status-wrap collapse" uib-collapse="ctrl.tcHeadStatusCollapse" aria-label="Test Cycle Details" style="height: 0px;">
+        <div class="issue-status-item">
+            <label for="headerStatus">Status:</label>
+            <span id="headerStatus">
+                <!---->
+                <!----><span ng-if="!ctrl.getIsActivationRequested()" class="test-cycle-status test-cycle-status-4">Closed</span><!---->
+            </span>
+        </div>
+        <div class="issue-status-item">
+            <label for="headerTestingType">Type:</label>
+
+            <span aria-hidden="true" class="testing-type-icon testing-type-3139"></span>
+            <!---->
+            <!----><span id="headerTestingType" ng-if="ctrl.getProductDetailValueText()">Exploratory with Test Cases</span><!---->
+        </div>
+        <div class="issue-status-item">
+            <label for="headerCompany">Company:</label>
+            <span id="headerCompany">
+                Applause - Academy
+            </span>
+        </div>
+        <div class="issue-status-item">
+            <label for="headerProduct">Product:</label>
+            <span id="headerProduct">uTest Academy - Challenge</span>
+        </div>
+        <!----><div ng-if="ctrl.testCycleInfo.productVersion" class="issue-status-item">
+            <label for="headerProductVersion">Build:</label>
+            <span id="headerProductVersion">5</span>
+        </div><!---->
+        <!----><div ng-if="ctrl.testCycleInfo.deactivationDate" class="issue-status-item">
+            <label for="headerCycleEnd">Cycle End:</label>
+            <span id="headerCycleEnd">6 months ago</span>
+        </div><!---->
+
+        <!---->
+        <!---->
+        <!---->
+    </div>
+</section>
+</test-cycle-header>
+
+      <ta-test-cycle-route-tabs _ngcontent-xun-c100="" _nghost-xun-c98=""><nav _ngcontent-xun-c98="" aria-label="Test Cycle" class="collapsible-tabs-container">
+  <div _ngcontent-xun-c98="" class="tabs-header--mobile">
+    <h3 _ngcontent-xun-c98="" class="tabs-header__title--mobile">Issues</h3>
+    <button _ngcontent-xun-c98="" type="button" class="tabs-toggle-btn">
+      <span _ngcontent-xun-c98="" class="cdk-visually-hidden">Toggle navigation</span>
+      <i _ngcontent-xun-c98="" class="fa fa-bars tabs-toggle-btn-icon"></i> View
+    </button>
+  </div><!---->
+
+  <div _ngcontent-xun-c98="" class="collapsed--mobile">
+    <ta-tabs-legacy _ngcontent-xun-c98="" _nghost-xun-c96="" role="tablist">
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn" aria-selected="false">
+  
+        Overview
+      
+</button>
+</ta-tab-legacy>
+
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn" aria-selected="false">
+  
+        Slots
+      
+</button>
+</ta-tab-legacy><!---->
+
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn" aria-selected="false">
+  
+        Announcements
+      
+</button>
+</ta-tab-legacy><!---->
+
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn" aria-selected="false">
+  
+        Builds
+      
+</button>
+</ta-tab-legacy><!---->
+
+      <!---->
+
+      <!---->
+
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn legacy-tab-btn--active" aria-selected="true">
+  
+        Issues
+      
+</button>
+</ta-tab-legacy><!---->
+
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn" aria-selected="false">
+  
+        Test Cases
+      
+</button>
+</ta-tab-legacy><!---->
+
+      <!---->
+
+      <!---->
+
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn" aria-selected="false">
+  
+        Reviews
+      
+</button>
+</ta-tab-legacy><!---->
+
+      <!---->
+
+      <!---->
+
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn" aria-selected="false">
+  
+        My Earnings
+      
+</button>
+</ta-tab-legacy><!---->
+
+      <!---->
+
+      <!---->
+
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn" aria-selected="false">
+  
+        Tester Scorecard
+      
+</button>
+</ta-tab-legacy><!---->
+
+      <!---->
+    
+</ta-tabs-legacy>
+  </div>
+</nav>
+</ta-test-cycle-route-tabs>
+    </div>
+
+    <div _ngcontent-xun-c100="" class="tab-content">
+      <ui-view _ngcontent-xun-c100="" name="details"><ta-test-cycle-tab-issues-route _nghost-xun-c146="">
+  <ui-view _ngcontent-xun-c146=""><ta-test-cycle-tab-issue-details-route _nghost-xun-c143=""><test-cycle-issue _ngcontent-xun-c143="">
+<issue issue-id="$ctrl.issueId" current-user="$ctrl.currentUser" test-cycle-info="$ctrl.testCycleInfo" show-paging="true" discarded="$ctrl.discarded()">
+<div class="bug-details" loading-spinner="false">
+  <!----><div class="issue" ng-if="ctrl.bugLoaded">
+    <div class="issue-head">
+
+      <div class="issue-meta">
+        <!----><single-record-pager ng-if="ctrl.showPaging" page-type="issues" url-param="issueId" class="issue-pager">
+<!----><span ng-if="$ctrl.enabled">
+    <a ng-href="/testcycles/391675/issues/5833836" ng-hide="!$ctrl.prevId" class="paginate" ng-click="$ctrl.prevClicked($event)" href="https://platform.utest.com/testcycles/391675/issues/5833836" aria-hidden="false"><i class="fa fa-caret-left before"></i> Previous</a>
+
+    <span ng-bind="$ctrl.currentIndex">16</span> of <span ng-bind="$ctrl.pager.total">33</span>
+
+    <a ng-href="/testcycles/391675/issues/5833541" ng-hide="!$ctrl.nextId" class="paginate" ng-click="$ctrl.nextClicked($event)" href="https://platform.utest.com/testcycles/391675/issues/5833541" aria-hidden="false">Next <i class="fa fa-caret-right after"></i></a>
+</span><!---->
+</single-record-pager><!---->
+        <div class="issue-title">
+          <span class="issue-meta-id">
+            #5833656
+            <span class="issue-meta-separator"></span>
+            11/24/22 at 1:42 AM
+            <span class="issue-meta-separator"></span>
+            Test Cycle
+            #<a href="javascript:" ng-click="ctrl.gotoCycleOverview(ctrl.overviewTestCycleId)">391675</a>
+          </span>
+          <h3>iPhone 13 Pro Max - Country And Language - App doesn't work properly while choosing country "Israel"</h3>
+          <!---->
+          <!---->
+        </div>
+        <!----><div ng-if="!ctrl.isFromKnownIssueList" class="issue-action">
+          <!---->
+          <!----><button ng-if="ctrl.getShowCopyBugToClipboard()" clipboard="" text="ctrl.getClipboardText()" type="button" class="btn btn-default btn-export"><i class="fa fa-clipboard before" aria-label="Copy to Clipboard"></i></button><!---->
+        </div><!---->
+
+        <div class="issue-status">
+          <div class="issue-status-item">
+            <span class="username">
+              <!----><img ng-if="ctrl.bug &amp;&amp; ctrl.bug.createdById" alt="" class="avatar avatar-md" ng-src="https://prod-avatar-svc.cloud.applause.com/947881/image" src="./Test Cycle - Issue Details_files/91e95fb32ee23b4522978726bceb4068.jpg"><!---->
+            </span>
+            <div class="issue-info-with-image">
+              <span class="issue-status-term">Tester</span>
+              <span class="issue-status-def">
+                <a ng-click="ctrl.showSnapshot(ctrl.bug.createdById)" ng-bind="ctrl.bug.createdBy">johnny medhane</a>
+              </span>
+            </div>
+          </div>
+          <dl class="issue-status-item">
+            <dt>Status</dt>
+            <dd class="status-report">
+              <span class="bug-status status-2">
+                <span ng-bind="ctrl.getBugPendingStatusLabel(ctrl.bug.bugStatusId, ctrl.bug.bugStatus)">Approved</span>
+              </span>
+              <!---->
+              <!---->
+            </dd>
+          </dl>
+          <!----><dl ng-if="ctrl.bug.fixWorthinessLevel" class="issue-status-item">
+            <dt ng-attr-title="{{ctrl.bug.fixWorthinessLevel}}" title="somewhat valuable">Value</dt>
+            <dd ng-bind="ctrl.bug.fixWorthinessLevel">somewhat valuable</dd>
+          </dl><!---->
+          <dl class="issue-status-item">
+            <dt>Build</dt>
+            <dd ng-bind="ctrl.bug.productVersion">5</dd>
+          </dl>
+          <dl class="issue-status-item">
+            <dt>Modified</dt>
+            <dd ng-bind="ctrl.bug.lastChangeDate | formatLongUSDate">11/24/22 at 2:40 AM</dd>
+          </dl>
+          <dl class="issue-status-item">
+            <dt>Severity</dt>
+            <dd>
+              <span class="bug-detail-value severity-3" ng-bind="ctrl.bug.bugSeverity">High</span>
+            </dd>
+          </dl>
+          <dl class="issue-status-item">
+            <dt ng-attr-title="{{ctrl.bug.bugType}}" title="Functional">Issue Type</dt>
+            <dd ng-bind="ctrl.bug.bugType">Functional</dd>
+          </dl>
+          <!----><dl ng-if="ctrl.bug.bugSource != null" class="issue-status-item">
+            <dt ng-attr-title="{{ctrl.bug.bugSource.description}}" title="Exploratory">Source</dt>
+            <dd ng-bind="ctrl.bug.bugSource.description">Exploratory</dd>
+          </dl><!---->
+          <dl class="issue-status-item">
+            <dt ng-attr-title="{{ctrl.bug.bugFrequency}}" title="Every Time">Frequency</dt>
+            <dd ng-bind="ctrl.bug.bugFrequency">Every Time</dd>
+          </dl>
+
+          <dl class="issue-status-item">
+            <dt>Environment</dt>
+            <!----><dd ng-if="!ctrl.bug.environmentPairs.length &gt; 0">
+              <!----><span ng-repeat="environment in ctrl.bug.environments" class="bug-environment break-line" ng-attr-title="{{environment.description}}" title="Apple iPhone 13 Pro Max - iOS 16.0, H0T Mobile">
+                <span ng-bind-html="ctrl.getEnvironmentIconsObj(environment)"><i class="fa fa-apple env-icon"></i> </span> <span ng-bind-html="environment.description">Apple iPhone 13 Pro Max - iOS 16.0, H0T Mobile</span>
+              </span><!---->
+            </dd><!---->
+            <!---->
+            <!---->
+          </dl>
+
+          <!---->
+
+          <!---->
+        </div>
+      </div>
+      <!---->
+      <!---->
+    </div>
+
+    <div class="issue-content" loading-spinner="false" bug="ctrl.bug" current-user="ctrl.currentUser" duplicates="ctrl.possibleDuplicates" on-send-requested-info="ctrl.showRequestMoreInfoResponse()" on-toggle-dupewarner="ctrl.toggleDupewarner()" test-cycle-info="ctrl.testCycleInfo" is-editable="ctrl.isEditable" is-from-known-issue-list="ctrl.isFromKnownIssueList" show-customer-notes="ctrl.customerNoteView" init-messages="ctrl.initMessages" show-approve-reject="ctrl.getShowApproveReject()" show-recommendation="ctrl.getShowRecommendation()" on-reject-dupe="ctrl.showRejectForm(id)" on-recommend-reject-dupe="ctrl.showBugRecommendationForm(&#39;rejectduplicate&#39;, id)">
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+
+    <div>
+  <ul class="nav nav-tabs" ng-class="{&#39;nav-stacked&#39;: vertical, &#39;nav-justified&#39;: justified}" ng-transclude="">
+        <li ng-class="{active: active, disabled: disabled}" class="uib-tab active" heading="Description">
+  <a style="cursor: pointer;" ng-click="select()" uib-tab-heading-transclude="">Description</a>
+</li>
+        <!---->
+        <!---->
+    </ul>
+  <div class="tab-content">
+    <!----><div class="tab-pane active" ng-repeat="tab in tabs" ng-class="{active: tab.active}" uib-tab-content-transclude="tab">
+    
+            <dl class="list dl-horizontal issue-info-item">
+                <!---->
+                <!---->
+            </dl>
+            <dl class="list dl-horizontal issue-info-item">
+                <!---->
+                <!---->
+            </dl>
+            <dl class="list dl-horizontal issue-info-item">
+                <!---->
+                <!---->
+            </dl>
+
+            <!---->
+            <!----><dl ng-if="ctrl.possibleDuplicates.length" class="list dl-horizontal issue-info-item">
+                <dt>
+                    Duplicate Bug Warning
+                </dt>
+                <dd id="dupewarner-container">
+                    <div ng-class="{&#39;with-highlight&#39;: ctrl.showHighlight}" class="dupewarner" duplicates="ctrl.possibleDuplicates" test-cycle-id="ctrl.testCycleInfo.id" on-confirm-reproduction="ctrl.confirmIssue(id)" is-ttl="ctrl.isTTLforCycle()" show-recommendation="ctrl.showRecommendation()" show-reject="ctrl.showApproveReject()" on-reject-dupe="ctrl.onRejectDupe({id:id})" on-recommend-reject-dupe="ctrl.onRecommendRejectDupe({id:id})">
+    <div class="tester-intro">
+        <label class="control-label bug-detail-label"><i class="fa fa-exclamation-triangle"></i> Do not report duplicates</label>
+        <p>Make sure your issue was not already reported - <ng-pluralize count="ctrl.duplicates.length" when="{&#39;1&#39;:&#39;this&#39;, &#39;other&#39;:&#39;these&#39;}">these</ng-pluralize>
+            7 <ng-pluralize count="ctrl.duplicates.length" when="{&#39;1&#39;:&#39;issue looks&#39;, &#39;other&#39;:&#39;issues look&#39;}">issues look</ng-pluralize> similar:</p>
+    </div>
+    <p>
+        <a ng-hide="ctrl.isTTL &amp;&amp; !ctrl.showMore" ng-click="ctrl.toggleHighlight()" href="https://platform.utest.com/" class="dupewarner-toggle-highlight" aria-hidden="false"><i class="fa fa-i-cursor before"></i>Highlight Duplicate Wording</a>
+    </p>
+    <ul class="bug-duplicate-list">
+        <!----><li ng-repeat="dupe in ctrl.initialDuplicates()" class="bug-duplicate bug-peek">
+            <bug-dupewarner-item dupe="dupe" is-from-known-issues-list="ctrl.isFromKnownIssuesList(dupe)" confirm-reproduction="ctrl.confirmReproduction(dupe.id)" reject-dupe="ctrl.rejectDupe(dupe.id)" recommend-dupe="ctrl.recommendRejectDupe(dupe.id)" show-reject="ctrl.showReject()" show-recommendation="ctrl.showRecommendation()">
+<span>
+  <a ng-show="$ctrl.showReject() &amp;&amp; !$ctrl.isFromKnownIssuesList" ng-click="$ctrl.rejectDupe({id:$ctrl.dupe.id})" href="javascript:" title="Reject current issue as duplicate to this similar issue" aria-hidden="true" class="ng-hide"><i class="fa fa-ban"></i></a>
+  <a ng-show="$ctrl.showRecommendation() &amp;&amp; !$ctrl.isFromKnownIssuesList" ng-click="$ctrl.recommendRejectDupe({id:$ctrl.dupe.id})" href="javascript:" title="Recommend a rejection for the current issue as duplicate to this similar issue" class="text-default ng-hide" aria-hidden="true"><i class="fa fa-ban"></i></a>
+  <a ng-show="!$ctrl.isFromKnownIssuesList" ng-click="$ctrl.confirmReproduction({id:$ctrl.dupe.id})" href="javascript:" class="bug-details-reproduce label label-default bug-dupe-confirm-button" aria-hidden="false"><i class="fa fa-plus"></i>1</a>
+  <span ng-show="$ctrl.isFromKnownIssuesList" class="known-issue-icon ng-hide" title="Known Issue reported in Test Cycle 391675" aria-hidden="true"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
+  <a ui-sref="testcycle.issues.issue({issueId:$ctrl.dupe.id})" href="https://platform.utest.com/testcycles/391675/issues/5833493"><span class="bug-duplicate-subject" ng-bind-html="$ctrl.dupe.enhancedSubject"><em>iPhone</em> Xs - PDP - After enlarging the image, the image fills the entire screen</span></a>
+  <tester-tooltip html-text="&lt;h5&gt;Title&lt;/h5&gt;&lt;p&gt;iPhone Xs - PDP - After enlarging the image, the image fills the entire screen&lt;/p&gt;&lt;h5&gt;Actual Result&lt;/h5&gt;&lt;p&gt;After enlarging the image, the user can reduce it to its original state.&lt;/p&gt;" location="right" max-height="250" style="padding-left: 5px">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="&lt;h5&gt;Title&lt;/h5&gt;&lt;p&gt;iPhone Xs - PDP - After enlarging the image, the image fills the entire screen&lt;/p&gt;&lt;h5&gt;Actual Result&lt;/h5&gt;&lt;p&gt;After enlarging the image, the user can reduce it to its original state.&lt;/p&gt;" tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip>
+</span>
+</bug-dupewarner-item>
+        </li><!----><li ng-repeat="dupe in ctrl.initialDuplicates()" class="bug-duplicate bug-peek">
+            <bug-dupewarner-item dupe="dupe" is-from-known-issues-list="ctrl.isFromKnownIssuesList(dupe)" confirm-reproduction="ctrl.confirmReproduction(dupe.id)" reject-dupe="ctrl.rejectDupe(dupe.id)" recommend-dupe="ctrl.recommendRejectDupe(dupe.id)" show-reject="ctrl.showReject()" show-recommendation="ctrl.showRecommendation()">
+<span>
+  <a ng-show="$ctrl.showReject() &amp;&amp; !$ctrl.isFromKnownIssuesList" ng-click="$ctrl.rejectDupe({id:$ctrl.dupe.id})" href="javascript:" title="Reject current issue as duplicate to this similar issue" aria-hidden="true" class="ng-hide"><i class="fa fa-ban"></i></a>
+  <a ng-show="$ctrl.showRecommendation() &amp;&amp; !$ctrl.isFromKnownIssuesList" ng-click="$ctrl.recommendRejectDupe({id:$ctrl.dupe.id})" href="javascript:" title="Recommend a rejection for the current issue as duplicate to this similar issue" class="text-default ng-hide" aria-hidden="true"><i class="fa fa-ban"></i></a>
+  <a ng-show="!$ctrl.isFromKnownIssuesList" ng-click="$ctrl.confirmReproduction({id:$ctrl.dupe.id})" href="javascript:" class="bug-details-reproduce label label-default bug-dupe-confirm-button" aria-hidden="false"><i class="fa fa-plus"></i>1</a>
+  <span ng-show="$ctrl.isFromKnownIssuesList" class="known-issue-icon ng-hide" title="Known Issue reported in Test Cycle 391675" aria-hidden="true"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
+  <a ui-sref="testcycle.issues.issue({issueId:$ctrl.dupe.id})" href="https://platform.utest.com/testcycles/391675/issues/5833541"><span class="bug-duplicate-subject" ng-bind-html="$ctrl.dupe.enhancedSubject"><em>iPhone</em> Xs - PDP - The message about adding an item to the cart is hard to see</span></a>
+  <tester-tooltip html-text="&lt;h5&gt;Title&lt;/h5&gt;&lt;p&gt;iPhone Xs - PDP - The message about adding an item to the cart is hard to see&lt;/p&gt;&lt;h5&gt;Actual Result&lt;/h5&gt;&lt;p&gt;After adding an item to the cart, the message that the item has been added is not visible.&lt;/p&gt;" location="right" max-height="250" style="padding-left: 5px">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="&lt;h5&gt;Title&lt;/h5&gt;&lt;p&gt;iPhone Xs - PDP - The message about adding an item to the cart is hard to see&lt;/p&gt;&lt;h5&gt;Actual Result&lt;/h5&gt;&lt;p&gt;After adding an item to the cart, the message that the item has been added is not visible.&lt;/p&gt;" tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip>
+</span>
+</bug-dupewarner-item>
+        </li><!----><li ng-repeat="dupe in ctrl.initialDuplicates()" class="bug-duplicate bug-peek">
+            <bug-dupewarner-item dupe="dupe" is-from-known-issues-list="ctrl.isFromKnownIssuesList(dupe)" confirm-reproduction="ctrl.confirmReproduction(dupe.id)" reject-dupe="ctrl.rejectDupe(dupe.id)" recommend-dupe="ctrl.recommendRejectDupe(dupe.id)" show-reject="ctrl.showReject()" show-recommendation="ctrl.showRecommendation()">
+<span>
+  <a ng-show="$ctrl.showReject() &amp;&amp; !$ctrl.isFromKnownIssuesList" ng-click="$ctrl.rejectDupe({id:$ctrl.dupe.id})" href="javascript:" title="Reject current issue as duplicate to this similar issue" aria-hidden="true" class="ng-hide"><i class="fa fa-ban"></i></a>
+  <a ng-show="$ctrl.showRecommendation() &amp;&amp; !$ctrl.isFromKnownIssuesList" ng-click="$ctrl.recommendRejectDupe({id:$ctrl.dupe.id})" href="javascript:" title="Recommend a rejection for the current issue as duplicate to this similar issue" class="text-default ng-hide" aria-hidden="true"><i class="fa fa-ban"></i></a>
+  <a ng-show="!$ctrl.isFromKnownIssuesList" ng-click="$ctrl.confirmReproduction({id:$ctrl.dupe.id})" href="javascript:" class="bug-details-reproduce label label-default bug-dupe-confirm-button" aria-hidden="false"><i class="fa fa-plus"></i>1</a>
+  <span ng-show="$ctrl.isFromKnownIssuesList" class="known-issue-icon ng-hide" title="Known Issue reported in Test Cycle 391675" aria-hidden="true"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
+  <a ui-sref="testcycle.issues.issue({issueId:$ctrl.dupe.id})" href="https://platform.utest.com/testcycles/391675/issues/5833519"><span class="bug-duplicate-subject" ng-bind-html="$ctrl.dupe.enhancedSubject"><em>iPhone</em> Xs - Onboarding - Unable to tap "Maybe Later" because the URL address overlap the button</span></a>
+  <tester-tooltip html-text="&lt;h5&gt;Title&lt;/h5&gt;&lt;p&gt;iPhone Xs - Onboarding - Unable to tap &amp;quot;Maybe Later&amp;quot; because the URL address overlap the button&lt;/p&gt;&lt;h5&gt;Actual Result&lt;/h5&gt;&lt;p&gt;Unable to tap &amp;quot;Maybe Later&amp;quot; because the URL address overlap the button&lt;/p&gt;" location="right" max-height="250" style="padding-left: 5px">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="&lt;h5&gt;Title&lt;/h5&gt;&lt;p&gt;iPhone Xs - Onboarding - Unable to tap &amp;quot;Maybe Later&amp;quot; because the URL address overlap the button&lt;/p&gt;&lt;h5&gt;Actual Result&lt;/h5&gt;&lt;p&gt;Unable to tap &amp;quot;Maybe Later&amp;quot; because the URL address overlap the button&lt;/p&gt;" tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip>
+</span>
+</bug-dupewarner-item>
+        </li><!----><li ng-repeat="dupe in ctrl.initialDuplicates()" class="bug-duplicate bug-peek">
+            <bug-dupewarner-item dupe="dupe" is-from-known-issues-list="ctrl.isFromKnownIssuesList(dupe)" confirm-reproduction="ctrl.confirmReproduction(dupe.id)" reject-dupe="ctrl.rejectDupe(dupe.id)" recommend-dupe="ctrl.recommendRejectDupe(dupe.id)" show-reject="ctrl.showReject()" show-recommendation="ctrl.showRecommendation()">
+<span>
+  <a ng-show="$ctrl.showReject() &amp;&amp; !$ctrl.isFromKnownIssuesList" ng-click="$ctrl.rejectDupe({id:$ctrl.dupe.id})" href="javascript:" title="Reject current issue as duplicate to this similar issue" aria-hidden="true" class="ng-hide"><i class="fa fa-ban"></i></a>
+  <a ng-show="$ctrl.showRecommendation() &amp;&amp; !$ctrl.isFromKnownIssuesList" ng-click="$ctrl.recommendRejectDupe({id:$ctrl.dupe.id})" href="javascript:" title="Recommend a rejection for the current issue as duplicate to this similar issue" class="text-default ng-hide" aria-hidden="true"><i class="fa fa-ban"></i></a>
+  <a ng-show="!$ctrl.isFromKnownIssuesList" ng-click="$ctrl.confirmReproduction({id:$ctrl.dupe.id})" href="javascript:" class="bug-details-reproduce label label-default bug-dupe-confirm-button" aria-hidden="false"><i class="fa fa-plus"></i>1</a>
+  <span ng-show="$ctrl.isFromKnownIssuesList" class="known-issue-icon ng-hide" title="Known Issue reported in Test Cycle 391675" aria-hidden="true"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
+  <a ui-sref="testcycle.issues.issue({issueId:$ctrl.dupe.id})" href="https://platform.utest.com/testcycles/391675/issues/5833291"><span class="bug-duplicate-subject" ng-bind-html="$ctrl.dupe.enhancedSubject"><em>IPhone</em> XR - PDP - Element "Black selected" is misaligned horizontally</span></a>
+  <tester-tooltip html-text="&lt;h5&gt;Title&lt;/h5&gt;&lt;p&gt;IPhone XR - PDP - Element &amp;quot;Black selected&amp;quot; is misaligned horizontally&lt;/p&gt;&lt;h5&gt;Actual Result&lt;/h5&gt;&lt;p&gt;Element &amp;quot;Black selected&amp;quot; is misaligned horizontally&lt;/p&gt;" location="right" max-height="250" style="padding-left: 5px">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="&lt;h5&gt;Title&lt;/h5&gt;&lt;p&gt;IPhone XR - PDP - Element &amp;quot;Black selected&amp;quot; is misaligned horizontally&lt;/p&gt;&lt;h5&gt;Actual Result&lt;/h5&gt;&lt;p&gt;Element &amp;quot;Black selected&amp;quot; is misaligned horizontally&lt;/p&gt;" tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip>
+</span>
+</bug-dupewarner-item>
+        </li><!----><li ng-repeat="dupe in ctrl.initialDuplicates()" class="bug-duplicate bug-peek">
+            <bug-dupewarner-item dupe="dupe" is-from-known-issues-list="ctrl.isFromKnownIssuesList(dupe)" confirm-reproduction="ctrl.confirmReproduction(dupe.id)" reject-dupe="ctrl.rejectDupe(dupe.id)" recommend-dupe="ctrl.recommendRejectDupe(dupe.id)" show-reject="ctrl.showReject()" show-recommendation="ctrl.showRecommendation()">
+<span>
+  <a ng-show="$ctrl.showReject() &amp;&amp; !$ctrl.isFromKnownIssuesList" ng-click="$ctrl.rejectDupe({id:$ctrl.dupe.id})" href="javascript:" title="Reject current issue as duplicate to this similar issue" aria-hidden="true" class="ng-hide"><i class="fa fa-ban"></i></a>
+  <a ng-show="$ctrl.showRecommendation() &amp;&amp; !$ctrl.isFromKnownIssuesList" ng-click="$ctrl.recommendRejectDupe({id:$ctrl.dupe.id})" href="javascript:" title="Recommend a rejection for the current issue as duplicate to this similar issue" class="text-default ng-hide" aria-hidden="true"><i class="fa fa-ban"></i></a>
+  <a ng-show="!$ctrl.isFromKnownIssuesList" ng-click="$ctrl.confirmReproduction({id:$ctrl.dupe.id})" href="javascript:" class="bug-details-reproduce label label-default bug-dupe-confirm-button" aria-hidden="false"><i class="fa fa-plus"></i>1</a>
+  <span ng-show="$ctrl.isFromKnownIssuesList" class="known-issue-icon ng-hide" title="Known Issue reported in Test Cycle 391675" aria-hidden="true"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
+  <a ui-sref="testcycle.issues.issue({issueId:$ctrl.dupe.id})" href="https://platform.utest.com/testcycles/391675/issues/5833108"><span class="bug-duplicate-subject" ng-bind-html="$ctrl.dupe.enhancedSubject"><em>iPhone</em> X - SRP - The search keyword is missing in the SRP</span></a>
+  <tester-tooltip html-text="&lt;h5&gt;Title&lt;/h5&gt;&lt;p&gt;iPhone X - SRP - The search keyword is missing in the SRP&lt;/p&gt;&lt;h5&gt;Actual Result&lt;/h5&gt;&lt;p&gt;The keyword in the phrase &amp;quot;Search results for..&amp;quot; is missing&lt;/p&gt;" location="right" max-height="250" style="padding-left: 5px">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="&lt;h5&gt;Title&lt;/h5&gt;&lt;p&gt;iPhone X - SRP - The search keyword is missing in the SRP&lt;/p&gt;&lt;h5&gt;Actual Result&lt;/h5&gt;&lt;p&gt;The keyword in the phrase &amp;quot;Search results for..&amp;quot; is missing&lt;/p&gt;" tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip>
+</span>
+</bug-dupewarner-item>
+        </li><!---->
+        <!----><li ng-show="ctrl.showMore" ng-repeat="dupe in ctrl.moreDuplicates()" class="bug-duplicate bug-peek ng-hide" aria-hidden="true">
+            <bug-dupewarner-item dupe="dupe" is-from-known-issues-list="ctrl.isFromKnownIssuesList(dupe)" confirm-reproduction="ctrl.confirmReproduction(dupe.id)" reject-dupe="ctrl.onRejectDupe({id:id})" recommend-reject-dupe="ctrl.onRecommendRejectDupe({id:id})" show-reject="ctrl.showReject()" show-recommendation="ctrl.showRecommendation()">
+<span>
+  <a ng-show="$ctrl.showReject() &amp;&amp; !$ctrl.isFromKnownIssuesList" ng-click="$ctrl.rejectDupe({id:$ctrl.dupe.id})" href="javascript:" title="Reject current issue as duplicate to this similar issue" aria-hidden="true" class="ng-hide"><i class="fa fa-ban"></i></a>
+  <a ng-show="$ctrl.showRecommendation() &amp;&amp; !$ctrl.isFromKnownIssuesList" ng-click="$ctrl.recommendRejectDupe({id:$ctrl.dupe.id})" href="javascript:" title="Recommend a rejection for the current issue as duplicate to this similar issue" class="text-default ng-hide" aria-hidden="true"><i class="fa fa-ban"></i></a>
+  <a ng-show="!$ctrl.isFromKnownIssuesList" ng-click="$ctrl.confirmReproduction({id:$ctrl.dupe.id})" href="javascript:" class="bug-details-reproduce label label-default bug-dupe-confirm-button" aria-hidden="false"><i class="fa fa-plus"></i>1</a>
+  <span ng-show="$ctrl.isFromKnownIssuesList" class="known-issue-icon ng-hide" title="Known Issue reported in Test Cycle 391675" aria-hidden="true"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
+  <a ui-sref="testcycle.issues.issue({issueId:$ctrl.dupe.id})" href="https://platform.utest.com/testcycles/391675/issues/5833398"><span class="bug-duplicate-subject" ng-bind-html="$ctrl.dupe.enhancedSubject"><em>iPhone</em> X - Search - The Widget "Search by image" doesn`t find the skirt pby the exact picture</span></a>
+  <tester-tooltip html-text="&lt;h5&gt;Title&lt;/h5&gt;&lt;p&gt;iPhone X - Search - The Widget &amp;quot;Search by image&amp;quot; doesn`t find the skirt pby the exact picture&lt;/p&gt;&lt;h5&gt;Actual Result&lt;/h5&gt;&lt;p&gt;The &amp;quot;Search by image&amp;quot; engine doesn`t find the pleated midi skirt, it finds other results.&lt;/p&gt;" location="right" max-height="250" style="padding-left: 5px">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="&lt;h5&gt;Title&lt;/h5&gt;&lt;p&gt;iPhone X - Search - The Widget &amp;quot;Search by image&amp;quot; doesn`t find the skirt pby the exact picture&lt;/p&gt;&lt;h5&gt;Actual Result&lt;/h5&gt;&lt;p&gt;The &amp;quot;Search by image&amp;quot; engine doesn`t find the pleated midi skirt, it finds other results.&lt;/p&gt;" tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip>
+</span>
+</bug-dupewarner-item>
+        </li><!----><li ng-show="ctrl.showMore" ng-repeat="dupe in ctrl.moreDuplicates()" class="bug-duplicate bug-peek ng-hide" aria-hidden="true">
+            <bug-dupewarner-item dupe="dupe" is-from-known-issues-list="ctrl.isFromKnownIssuesList(dupe)" confirm-reproduction="ctrl.confirmReproduction(dupe.id)" reject-dupe="ctrl.onRejectDupe({id:id})" recommend-reject-dupe="ctrl.onRecommendRejectDupe({id:id})" show-reject="ctrl.showReject()" show-recommendation="ctrl.showRecommendation()">
+<span>
+  <a ng-show="$ctrl.showReject() &amp;&amp; !$ctrl.isFromKnownIssuesList" ng-click="$ctrl.rejectDupe({id:$ctrl.dupe.id})" href="javascript:" title="Reject current issue as duplicate to this similar issue" aria-hidden="true" class="ng-hide"><i class="fa fa-ban"></i></a>
+  <a ng-show="$ctrl.showRecommendation() &amp;&amp; !$ctrl.isFromKnownIssuesList" ng-click="$ctrl.recommendRejectDupe({id:$ctrl.dupe.id})" href="javascript:" title="Recommend a rejection for the current issue as duplicate to this similar issue" class="text-default ng-hide" aria-hidden="true"><i class="fa fa-ban"></i></a>
+  <a ng-show="!$ctrl.isFromKnownIssuesList" ng-click="$ctrl.confirmReproduction({id:$ctrl.dupe.id})" href="javascript:" class="bug-details-reproduce label label-default bug-dupe-confirm-button" aria-hidden="false"><i class="fa fa-plus"></i>1</a>
+  <span ng-show="$ctrl.isFromKnownIssuesList" class="known-issue-icon ng-hide" title="Known Issue reported in Test Cycle 391675" aria-hidden="true"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
+  <a ui-sref="testcycle.issues.issue({issueId:$ctrl.dupe.id})" href="https://platform.utest.com/testcycles/391675/issues/5833151"><span class="bug-duplicate-subject" ng-bind-html="$ctrl.dupe.enhancedSubject"><em>iPhone</em> X - PLP - Filters for "red only" doesn`t give red only results.</span></a>
+  <tester-tooltip html-text="&lt;h5&gt;Title&lt;/h5&gt;&lt;p&gt;iPhone X - PLP - Filters for &amp;quot;red only&amp;quot; doesn`t give red only results.&lt;/p&gt;&lt;h5&gt;Actual Result&lt;/h5&gt;&lt;p&gt;Filters doesn`t work as expected. When selecting red only, it still finds everything else.&lt;/p&gt;" location="right" max-height="250" style="padding-left: 5px">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="&lt;h5&gt;Title&lt;/h5&gt;&lt;p&gt;iPhone X - PLP - Filters for &amp;quot;red only&amp;quot; doesn`t give red only results.&lt;/p&gt;&lt;h5&gt;Actual Result&lt;/h5&gt;&lt;p&gt;Filters doesn`t work as expected. When selecting red only, it still finds everything else.&lt;/p&gt;" tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip>
+</span>
+</bug-dupewarner-item>
+        </li><!---->
+        <a ng-show="ctrl.duplicates.length &gt; ctrl.numOfDupesToDisplay &amp;&amp; !ctrl.showMore" class="btn btn-default" href="https://platform.utest.com/" ng-click="ctrl.showMore=true" aria-hidden="false">Show All Duplicates</a>
+    </ul>
+    <!---->
+    <!---->
+</div>
+                </dd>
+            </dl><!---->
+            <dl class="list dl-horizontal issue-info-item ng-hide" ng-show="(ctrl.reproductions &amp;&amp; ctrl.reproductions.length) || ctrl.getShowConfirmIssueButton()" current-user="ctrl.currentUser" my-reproduction="ctrl.myReproduction" on-confirm-reproduction="ctrl.confirmIssue(id)" reproductions="ctrl.bug.reproductions" same-user="ctrl.sameUser" test-cycle-info="ctrl.testCycleInfo" is-from-known-issue-list="ctrl.isFromKnownIssueList" on-edit-tester-reproduction="ctrl.editTesterReproduction(issueId,testerId)" issue-id="ctrl.bug.id" aria-hidden="true">
+    <dt>
+        Community Reproductions
+    </dt>
+    <dd>
+
+        <!---->
+        <a href="https://platform.utest.com/" ng-click="ctrl.toggleDetails()" ng-show="ctrl.reproductions &amp;&amp; ctrl.reproductions.length" ng-bind="ctrl.showDetails ? &#39;Hide Reproductions&#39; : &#39;Show &#39; + ctrl.reproductions.length + &#39; Reproductions&#39;" aria-hidden="true" class="ng-hide">Show 0 Reproductions</a>
+        <!----><div ng-if="!ctrl.showDetails" class="tester-avatars">
+            <!---->
+        </div><!---->
+        <!---->
+    </dd>
+</dl>
+            <!---->
+            <!---->
+            <!----><dl ng-if="ctrl.getHasActionPerformed()" class="list dl-horizontal issue-info-item">
+                <dt>
+                    Action Performed
+                </dt>
+                <dd html-compile-unsafe="ctrl.bug.actionPerformed | escape | linkyUnsanitizedWithQRcode | convertNewline">1. Open MANGO the testing app <br>2. Tap on profile icon<br>3. Tap on "Country And Language" <br>4. Tap "OK"<br>5. Choose "Israel English" from the region and language list</dd>
+            </dl><!---->
+            <!----><dl ng-if="ctrl.getHasExpectedResult()" class="list dl-horizontal issue-info-item">
+                <dt>
+                    <span ng-bind="ctrl.getBugExpectedResultText()">Expected Result</span>
+                </dt>
+                <dd html-compile-unsafe="ctrl.bug.expectedResult | escape | linkyUnsanitizedWithQRcode | convertNewline">Everything is working property</dd>
+            </dl><!---->
+            <!----><dl ng-if="ctrl.getHasResult()" class="list dl-horizontal issue-info-item">
+                <dt>
+                    <span ng-bind="ctrl.getBugResultText()">Actual Result</span>
+                </dt>
+                <dd html-compile-unsafe="ctrl.bug.result | escape | linkyUnsanitizedWithQRcode | convertNewline">The home page appear incorrect<br>1. NO option to change categories<br>2 The bag icon disappear</dd>
+            </dl><!---->
+            <!----><dl ng-if="ctrl.getHasErrorMessage()" class="list dl-horizontal issue-info-item">
+                <dt>
+                    Error Message
+                </dt>
+                <dd html-compile-unsafe="ctrl.bug.errorMessage | escape | linkyUnsanitizedWithQRcode | convertNewline">Error loading data</dd>
+            </dl><!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!----><dl class="list dl-horizontal issue-info-item" ng-repeat="field in ctrl.bug.customFields | orderBy:&#39;order&#39;" field="field">
+  <dt>
+      <span>Exact URL</span>
+      <!----><tester-tooltip ng-if="ctrl.field.description" html-text="Provide the URL of the page where the issue occurs. You can copy and paste the link here from your browser." location="right">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="Provide the URL of the page where the issue occurs. You can copy and paste the link here from your browser." tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip><!---->
+  </dt>
+  <dd html-compile-unsafe="ctrl.field.displayValue | escape | linkyUnsanitizedWithQRcode | convertNewline">N/A</dd>
+</dl><!----><dl class="list dl-horizontal issue-info-item" ng-repeat="field in ctrl.bug.customFields | orderBy:&#39;order&#39;" field="field">
+  <dt>
+      <span>Did you attach an mp4 video?</span>
+      <!----><tester-tooltip ng-if="ctrl.field.description" html-text="Upload an mp4 screen recording of the issue - [with no background noise]" location="right">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="Upload an mp4 screen recording of the issue - [with no background noise]" tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip><!---->
+  </dt>
+  <dd html-compile-unsafe="ctrl.field.displayValue | escape | linkyUnsanitizedWithQRcode | convertNewline">Yes, I did upload an mp4 video</dd>
+</dl><!----><dl class="list dl-horizontal issue-info-item" ng-repeat="field in ctrl.bug.customFields | orderBy:&#39;order&#39;" field="field">
+  <dt>
+      <span>Did you attach a screenshot?</span>
+      <!----><tester-tooltip ng-if="ctrl.field.description" html-text="Upload a highlighted screenshot of the issue - [red rectangle around the issue]" location="right">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="Upload a highlighted screenshot of the issue - [red rectangle around the issue]" tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip><!---->
+  </dt>
+  <dd html-compile-unsafe="ctrl.field.displayValue | escape | linkyUnsanitizedWithQRcode | convertNewline">Yes, I did upload a highlighted screenshot of the issue.</dd>
+</dl><!----><dl class="list dl-horizontal issue-info-item" ng-repeat="field in ctrl.bug.customFields | orderBy:&#39;order&#39;" field="field">
+  <dt>
+      <span>Did you attach a Log with timestamp?</span>
+      <!----><tester-tooltip ng-if="ctrl.field.description" html-text="Upload a website console log or mobile device log while recreating the issue - [.TXT format]" location="right">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="Upload a website console log or mobile device log while recreating the issue - [.TXT format]" tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip><!---->
+  </dt>
+  <dd html-compile-unsafe="ctrl.field.displayValue | escape | linkyUnsanitizedWithQRcode | convertNewline">Yes, I did upload a device log or console log in .txt format</dd>
+</dl><!---->
+
+            <!----><dl ng-if="ctrl.getShowAttachments()" class="dl-horizontal list issue-info-item">
+                <dt>
+                    Attachments
+                </dt>
+                <dd>
+                    <div class="attach-wrap">
+                        <!----><div ng-if="(ctrl.sameUser &amp;&amp; !(ctrl.isPending || ctrl.isRejected || ctrl.isDiscarded)) || (ctrl.sameUser &amp;&amp; ctrl.isApproved) || ctrl.isTTLforCycle()">
+                            <file-upload auto-upload="true" allow-multiple="true" max-attachments="" max-attachment-size="15728640" entity-id="5833656" entity-type-id="1" attachment-type-id="1" on-upload-complete="ctrl.onUploadComplete">
+<div class="attach-wrap">
+    <div class="dropzone-wrapper">
+        <div class="file-dropzone ng-pristine ng-untouched ng-valid ng-not-empty" ngf-drop="" ngf-drag-over-class="&#39;active&#39;" ngf-multiple="allowMultiple" ng-model="files" ngf-keep="true" ngf-validate-fn="validate($file)" ngf-ignore-invalid="&#39;validateFn&#39;" ngf-accept="acceptType" ngf-pattern="" ngf-change="onFileChange($files, $file, $newFiles)" disable-autosave="" ngf-before-model-change="beforeChange($files)" aria-invalid="false">
+            <div class="h4">Drag a file here</div>
+            <span class="or">or just...</span>
+            <div class="uploader">
+                <input type="file" ngf-select="" disable-autosave="" ng-model="files" name="" ng-hide="autoUpload" ngf-multiple="true" ngf-keep="true" ng-disabled="isUploading" ngf-accept="acceptType" ngf-pattern="" ngf-validate-fn="validate($file)" ngf-ignore-invalid="&#39;validateFn&#39;" ngf-change="onFileChange($files, $file, $newFiles)" id="filesUploaded" aria-describedby="filesUploadedError" ngf-before-model-change="beforeChange($files)" ng-required="isRequired()" class="ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-required ng-hide" multiple="multiple" aria-hidden="true" aria-invalid="false">
+                
+                <input type="file" disable-autosave="" ng-model="tmpFiles" ngf-select="autoUploadFiles($files)" ng-show="autoUpload" ngf-multiple="true" ngf-keep="true" ngf-accept="acceptType" ngf-pattern="" ngf-validate-fn="validate($file)" ngf-ignore-invalid="&#39;validateFn&#39;" ngf-before-model-change="beforeChange($files)" class="ng-pristine ng-untouched ng-valid ng-not-empty" multiple="multiple" aria-hidden="false" aria-invalid="false">
+                
+                <input name="" type="hidden" disable-autosave="" ng-model="fileCount" required-when="isRequired()" autocomplete="off" class="ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-required-when">
+                
+            </div>
+        </div>
+    </div>
+    <!---->
+    
+</div>
+</file-upload>
+                        </div><!---->
+                        <!----><attachment class="attach" ng-repeat="a in ctrl.bug.attachments" attachment="a" can-delete="ctrl.canDeleteAttachment()" current-user="ctrl.currentUser" on-delete="ctrl.onDeleteAttachment(a)">
+<!---->
+
+<!----><span class="attach-item" ng-if="!ctrl.useOTARendering" ng-class="{ota: ctrl.useOTARendering}">
+    <!---->
+    <!----><span ng-if="!ctrl.isEncoding()">
+        <!---->
+        <!----><div class="attach-preview" ng-if="ctrl.showPlaceholder()">
+            <a ng-href="https://platform.utest.com/services/links/v1/internal/40160308?.txt" rel="nofollow" target="_blank" class="attach-img-link" href="https://platform.utest.com/services/links/v1/internal/40160308?.txt">
+                <img ng-src="/assets/images/default-file-icon.svg" alt="Bug5833656_logs.txt" class="attach-placeholder" src="./Test Cycle - Issue Details_files/default-file-icon.svg">
+            </a>
+        </div><!---->
+        <!---->
+        <span>
+            <a class="name" ng-href="https://platform.utest.com/services/links/v1/internal/40160308?.txt" rel="nofollow" target="_blank" ng-attr-title="{{ctrl.attachment.fileName}}" href="https://platform.utest.com/services/links/v1/internal/40160308?.txt" title="Bug5833656_logs.txt">
+                logs.txt
+            </a><!----><span ng-if="ctrl.attachment.fileSize" class="attach-filesize" ng-bind="&#39;- &#39; + ctrl.renderFileSize(ctrl.attachment.fileSize)">- 1.15 MB</span><!---->
+        </span>
+        <div class="attach-actions">
+            <qr-code-link file-name="ctrl.cleanFileName" url="ctrl.storageURL" is-open-inline="ctrl.isQrCodeOpenInline">
+<a href="javascript:" ng-click="$ctrl.showQrCodeDialog()" class="type qr-code-trigger attach-qr" tabindex="-1" aria-hidden="true">
+    <i class="fa fa-qrcode"></i>
+</a>
+<!---->
+</qr-code-link>
+            <!----><ngf-attachment-share-button ng-if="ctrl.attachment.canShareExternalLink" [attachment-id]="ctrl.attachment.id" _nghost-xun-c298="" ng-version="14.2.12"><span _ngcontent-xun-c298="" class="share-button-host">
+  
+                <a href="javascript:" tabindex="-1" aria-hidden="true" title="Click to copy a shareable link to the clipboard">
+                    <i class="fa fa-share-alt"></i>
+                </a>
+            
+</span><!---->
+
+<!----></ngf-attachment-share-button><!---->
+        </div>
+    </span><!---->
+    <div class="attach-desc">
+        <!---->
+        <!---->
+        <ng-transclude></ng-transclude>
+    </div>
+</span><!---->
+</attachment><!----><attachment class="attach" ng-repeat="a in ctrl.bug.attachments" attachment="a" can-delete="ctrl.canDeleteAttachment()" current-user="ctrl.currentUser" on-delete="ctrl.onDeleteAttachment(a)">
+<!---->
+
+<!----><span class="attach-item" ng-if="!ctrl.useOTARendering" ng-class="{ota: ctrl.useOTARendering}">
+    <!---->
+    <!----><span ng-if="!ctrl.isEncoding()">
+        <!---->
+        <!---->
+        <!----><div class="attach-preview" ng-if="ctrl.showVideoEmbedded()">
+            <video class="video-js" controls="" preload="none" data-setup="{}">
+                <!----><source ng-repeat="source in ctrl.videoSource.sources" src="https://platform.utest.com/services/links/v1/internal/40160309?.mp4" type="video/mp4"><!---->
+            </video>
+        </div><!---->
+        <span>
+            <a class="name" ng-href="https://platform.utest.com/services/links/v1/internal/40160309?.mp4" rel="nofollow" target="_blank" ng-attr-title="{{ctrl.attachment.fileName}}" href="https://platform.utest.com/services/links/v1/internal/40160309?.mp4" title="Bug5833656_VEYYE6233__1_.mp4">
+                VEYYE6233  1 .mp4
+            </a><!----><span ng-if="ctrl.attachment.fileSize" class="attach-filesize" ng-bind="&#39;- &#39; + ctrl.renderFileSize(ctrl.attachment.fileSize)">- 10.52 MB</span><!---->
+        </span>
+        <div class="attach-actions">
+            <qr-code-link file-name="ctrl.cleanFileName" url="ctrl.storageURL" is-open-inline="ctrl.isQrCodeOpenInline">
+<a href="javascript:" ng-click="$ctrl.showQrCodeDialog()" class="type qr-code-trigger attach-qr" tabindex="-1" aria-hidden="true">
+    <i class="fa fa-qrcode"></i>
+</a>
+<!---->
+</qr-code-link>
+            <!----><ngf-attachment-share-button ng-if="ctrl.attachment.canShareExternalLink" [attachment-id]="ctrl.attachment.id" _nghost-xun-c298="" ng-version="14.2.12"><span _ngcontent-xun-c298="" class="share-button-host">
+  
+                <a href="javascript:" tabindex="-1" aria-hidden="true" title="Click to copy a shareable link to the clipboard">
+                    <i class="fa fa-share-alt"></i>
+                </a>
+            
+</span><!---->
+
+<!----></ngf-attachment-share-button><!---->
+        </div>
+    </span><!---->
+    <div class="attach-desc">
+        <!---->
+        <!---->
+        <ng-transclude></ng-transclude>
+    </div>
+</span><!---->
+</attachment><!----><attachment class="attach" ng-repeat="a in ctrl.bug.attachments" attachment="a" can-delete="ctrl.canDeleteAttachment()" current-user="ctrl.currentUser" on-delete="ctrl.onDeleteAttachment(a)">
+<!---->
+
+<!----><span class="attach-item" ng-if="!ctrl.useOTARendering" ng-class="{ota: ctrl.useOTARendering}">
+    <!---->
+    <!----><span ng-if="!ctrl.isEncoding()">
+        <!----><div class="attach-preview" ng-if="ctrl.showImageInline()">
+            <a ng-href="https://platform.utest.com/services/links/v1/internal/40160406?.jpeg" rel="nofollow" target="_blank" class="attach-img-link" href="https://platform.utest.com/services/links/v1/internal/40160406?.jpeg">
+                <img ng-src="https://platform.utest.com/services/links/v1/internal/40160406?.jpeg" alt="Bug5833656_2BDE9090-BADA-4D77-A58D-8611D2489C74.jpeg" class="attach-img" src="https://platform.utest.com/services/links/v1/internal/40160406?.jpeg">
+            </a>
+        </div><!---->
+        <!---->
+        <!---->
+        <span>
+            <a class="name" ng-href="https://platform.utest.com/services/links/v1/internal/40160406?.jpeg" rel="nofollow" target="_blank" ng-attr-title="{{ctrl.attachment.fileName}}" href="https://platform.utest.com/services/links/v1/internal/40160406?.jpeg" title="Bug5833656_2BDE9090-BADA-4D77-A58D-8611D2489C74.jpeg">
+                2BDE9090-BADA-4D77-A58D-8611D2489C74.jpeg
+            </a><!----><span ng-if="ctrl.attachment.fileSize" class="attach-filesize" ng-bind="&#39;- &#39; + ctrl.renderFileSize(ctrl.attachment.fileSize)">- 246 KB</span><!---->
+        </span>
+        <div class="attach-actions">
+            <qr-code-link file-name="ctrl.cleanFileName" url="ctrl.storageURL" is-open-inline="ctrl.isQrCodeOpenInline">
+<a href="javascript:" ng-click="$ctrl.showQrCodeDialog()" class="type qr-code-trigger attach-qr" tabindex="-1" aria-hidden="true">
+    <i class="fa fa-qrcode"></i>
+</a>
+<!---->
+</qr-code-link>
+            <!----><ngf-attachment-share-button ng-if="ctrl.attachment.canShareExternalLink" [attachment-id]="ctrl.attachment.id" _nghost-xun-c298="" ng-version="14.2.12"><span _ngcontent-xun-c298="" class="share-button-host">
+  
+                <a href="javascript:" tabindex="-1" aria-hidden="true" title="Click to copy a shareable link to the clipboard">
+                    <i class="fa fa-share-alt"></i>
+                </a>
+            
+</span><!---->
+
+<!----></ngf-attachment-share-button><!---->
+        </div>
+    </span><!---->
+    <div class="attach-desc">
+        <!---->
+        <!---->
+        <ng-transclude></ng-transclude>
+    </div>
+</span><!---->
+</attachment><!----><attachment class="attach" ng-repeat="a in ctrl.bug.attachments" attachment="a" can-delete="ctrl.canDeleteAttachment()" current-user="ctrl.currentUser" on-delete="ctrl.onDeleteAttachment(a)">
+<!---->
+
+<!----><span class="attach-item" ng-if="!ctrl.useOTARendering" ng-class="{ota: ctrl.useOTARendering}">
+    <!---->
+    <!----><span ng-if="!ctrl.isEncoding()">
+        <!----><div class="attach-preview" ng-if="ctrl.showImageInline()">
+            <a ng-href="https://platform.utest.com/services/links/v1/internal/40160407?.jpeg" rel="nofollow" target="_blank" class="attach-img-link" href="https://platform.utest.com/services/links/v1/internal/40160407?.jpeg">
+                <img ng-src="https://platform.utest.com/services/links/v1/internal/40160407?.jpeg" alt="Bug5833656_B4445E83-FFD9-4417-AA4D-32EEC74A2406.jpeg" class="attach-img" src="https://platform.utest.com/services/links/v1/internal/40160407?.jpeg">
+            </a>
+        </div><!---->
+        <!---->
+        <!---->
+        <span>
+            <a class="name" ng-href="https://platform.utest.com/services/links/v1/internal/40160407?.jpeg" rel="nofollow" target="_blank" ng-attr-title="{{ctrl.attachment.fileName}}" href="https://platform.utest.com/services/links/v1/internal/40160407?.jpeg" title="Bug5833656_B4445E83-FFD9-4417-AA4D-32EEC74A2406.jpeg">
+                B4445E83-FFD9-4417-AA4D-32EEC74A2406.jpeg
+            </a><!----><span ng-if="ctrl.attachment.fileSize" class="attach-filesize" ng-bind="&#39;- &#39; + ctrl.renderFileSize(ctrl.attachment.fileSize)">- 2.13 MB</span><!---->
+        </span>
+        <div class="attach-actions">
+            <qr-code-link file-name="ctrl.cleanFileName" url="ctrl.storageURL" is-open-inline="ctrl.isQrCodeOpenInline">
+<a href="javascript:" ng-click="$ctrl.showQrCodeDialog()" class="type qr-code-trigger attach-qr" tabindex="-1" aria-hidden="true">
+    <i class="fa fa-qrcode"></i>
+</a>
+<!---->
+</qr-code-link>
+            <!----><ngf-attachment-share-button ng-if="ctrl.attachment.canShareExternalLink" [attachment-id]="ctrl.attachment.id" _nghost-xun-c298="" ng-version="14.2.12"><span _ngcontent-xun-c298="" class="share-button-host">
+  
+                <a href="javascript:" tabindex="-1" aria-hidden="true" title="Click to copy a shareable link to the clipboard">
+                    <i class="fa fa-share-alt"></i>
+                </a>
+            
+</span><!---->
+
+<!----></ngf-attachment-share-button><!---->
+        </div>
+    </span><!---->
+    <div class="attach-desc">
+        <!---->
+        <!---->
+        <ng-transclude></ng-transclude>
+    </div>
+</span><!---->
+</attachment><!---->
+                    </div>
+                </dd>
+
+            </dl><!---->
+
+
+        </div><!---->
+  </div>
+</div>
+
+</div>
+
+  </div><!---->
+</div>
+</issue>
+</test-cycle-issue>
+</ta-test-cycle-tab-issue-details-route><!----><!----></ui-view><!---->
+<!----><!---->
+</ta-test-cycle-tab-issues-route><!----><!----></ui-view><!---->
+    </div>
+  </div>
+</div><!----><!---->
+
+<!---->
+</ta-test-cycle-route><!----><!----></ui-view><!---->
+  </ng-transclude>
+      </div>
+    </main>
+  </div><!---->
+</div>
+</content-and-sidebar>
+<!----><!---->
+
+<!---->
+</tester-app>
+<script src="https://platform.utest.com/runtime.c3808146fe812df6.js" type="module"></script><script src="https://platform.utest.com/polyfills.5a1fde7ed9e8c697.js" type="module"></script><script src="./Test Cycle - Issue Details_files/scripts.93886a4e95817909.js.download" defer=""></script><script src="https://platform.utest.com/main.aceb80798021de29.js" type="module"></script>
+
+</body></html>
