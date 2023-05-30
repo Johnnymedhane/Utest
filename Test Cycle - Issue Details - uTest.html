@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://platform.utest.com/testcycles/394545/issues/5856176 -->
+<html ng-controller="AppController" lang="en" class=" geolocation svg localstorage sessionstorage audio canvas canvastext video webgl no-emoji inlinesvg supports svgclippaths smil nthchild cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside cssfilters flexbox flexboxlegacy"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-datepicker-popup.dropdown-menu{display:block;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style>@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><style>@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid:not(.vjs-audio-only-mode) {
+        padding-top: 56.25%
+      }
+    </style><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link rel="preconnect" href="https://use.typekit.net/" crossorigin="">
+  <link rel="dns-prefetch" href="https://ajax.googleapis.com/">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+  <!--<base href="/">--><base href=".">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="cleartype" content="on">
+  <style type="text/css">@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV0exoMUdjFXmSU_.woff) format('woff');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWVQexoMUdjFXmSU_.woff) format('woff');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWVwexoMUdjFXmSU_.woff) format('woff');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWVMexoMUdjFXmSU_.woff) format('woff');unicode-range:U+0370-03FF;}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWVIexoMUdjFXmSU_.woff) format('woff');unicode-range:U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV8exoMUdjFXmSU_.woff) format('woff');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exoMUdjFXmSU_.woff) format('woff');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWVAexoMUdjFXmQ.woff) format('woff');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');unicode-range:U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');unicode-range:U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');unicode-range:U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');unicode-range:U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu0SC55K5gw.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu0SC55K5gw.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu0SC55K5gw.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu0SC55K5gw.woff2) format('woff2');unicode-range:U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu0SC55K5gw.woff2) format('woff2');unicode-range:U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+
+  <title>Test Cycle - Issue Details - uTest</title>
+  <meta name="keywords" content="software,testing">
+  <meta name="description" content="">
+  <meta property="og:title" content="uTest">
+  <meta property="og:description" content="">
+
+  <!-- CSS for Proxima Nova font -->
+  <style type="text/css">@import url("https://p.typekit.net/p.css?s=1&k=emc4mjh&ht=tk&f=139.140.169.171.173.174.175.176.5474.5475.25136.25137&a=19819204&app=typekit&e=css");@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/d82519/00000000000000003b9b306a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"),url("https://use.typekit.net/af/d82519/00000000000000003b9b306a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"),url("https://use.typekit.net/af/d82519/00000000000000003b9b306a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");font-display:auto;font-style:normal;font-weight:800;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/c47696/00000000000000003b9b305e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff2"),url("https://use.typekit.net/af/c47696/00000000000000003b9b305e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff"),url("https://use.typekit.net/af/c47696/00000000000000003b9b305e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("opentype");font-display:auto;font-style:normal;font-weight:100;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/f7d492/00000000000000003b9b3067/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff2"),url("https://use.typekit.net/af/f7d492/00000000000000003b9b3067/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("woff"),url("https://use.typekit.net/af/f7d492/00000000000000003b9b3067/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3") format("opentype");font-display:auto;font-style:italic;font-weight:600;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/cebe0e/00000000000000003b9b3060/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/cebe0e/00000000000000003b9b3060/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/cebe0e/00000000000000003b9b3060/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");font-display:auto;font-style:normal;font-weight:300;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/40ff7f/00000000000000003b9b3061/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff2"),url("https://use.typekit.net/af/40ff7f/00000000000000003b9b3061/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff"),url("https://use.typekit.net/af/40ff7f/00000000000000003b9b3061/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("opentype");font-display:auto;font-style:italic;font-weight:300;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");font-display:auto;font-style:normal;font-weight:500;font-stretch:normal;}@font-face {font-family:"proxima-nova";src:url("https://use.typekit.net/af/5b5251/00000000000000003b9b3065/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff2"),url("https://use.typekit.net/af/5b5251/00000000000000003b9b3065/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("woff"),url("https://use.typekit.net/af/5b5251/00000000000000003b9b3065/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3") format("opentype");font-display:auto;font-style:italic;font-weight:500;font-stretch:normal;}.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}</style>
+  <style type="text/css">@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
+
+    <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://platform.utest.com/assets/images/branding-icons/apple-touch-icon.png?v=4">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://platform.utest.com/assets/images/branding-icons/favicon-32x32.png?v=4">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://platform.utest.com/assets/images/branding-icons/favicon-16x16.png?v=4">
+  <link rel="manifest" href="https://platform.utest.com/assets/images/branding-icons/site.webmanifest?v=4" crossorigin="use-credentials">
+  <link rel="mask-icon" href="https://platform.utest.com/assets/images/branding-icons/safari-pinned-tab.svg?v=4" color="#5bbad5">
+  <link rel="shortcut icon" href="https://platform.utest.com/assets/images/branding-icons/favicon.ico?v=4">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/assets/images/branding-icons/browserconfig.xml?v=4">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Polyfill for Array.prototype.include() -->
+  <script async="" src="./Test Cycle - Issue Details - uTest_files/analytics.js.download"></script><script>
+    // https://tc39.github.io/ecma262/#sec-array.prototype.includes
+    if (!Array.prototype.includes) {
+      Object.defineProperty(Array.prototype, 'includes', {
+        value: function(valueToFind, fromIndex) {
+
+          if (this == null) {
+            throw new TypeError('"this" is null or not defined');
+          }
+
+          // 1. Let O be ? ToObject(this value).
+          var o = Object(this);
+
+          // 2. Let len be ? ToLength(? Get(O, "length")).
+          var len = o.length >>> 0;
+
+          // 3. If len is 0, return false.
+          if (len === 0) {
+            return false;
+          }
+
+          // 4. Let n be ? ToInteger(fromIndex).
+          //    (If fromIndex is undefined, this step produces the value 0.)
+          var n = fromIndex | 0;
+
+          // 5. If n ≥ 0, then
+          //  a. Let k be n.
+          // 6. Else n < 0,
+          //  a. Let k be len + n.
+          //  b. If k < 0, let k be 0.
+          var k = Math.max(n >= 0 ? n : len - Math.abs(n), 0);
+
+          function sameValueZero(x, y) {
+            return x === y || (typeof x === 'number' && typeof y === 'number' && isNaN(x) && isNaN(y));
+          }
+
+          // 7. Repeat, while k < len
+          while (k < len) {
+            // a. Let elementK be the result of ? Get(O, ! ToString(k)).
+            // b. If SameValueZero(valueToFind, elementK) is true, return true.
+            if (sameValueZero(o[k], valueToFind)) {
+              return true;
+            }
+            // c. Increase k by 1.
+            k++;
+          }
+
+          // 8. Return false
+          return false;
+        }
+      });
+    }
+  </script>
+
+  <!-- Google analytics-->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new
+                      Date(); a = s.createElement(o),
+              m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  </script>
+
+
+<style>@import"//fonts.googleapis.com/css?family=Roboto:100,300,300italic,400,500,700,900";@import"https://use.typekit.net/emc4mjh.css";@import"https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap";html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}@media print{*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;box-shadow:none!important}}*{box-sizing:border-box}:after,:before{box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}@charset "UTF-8";@charset "UTF-8";html{min-height:100%}body{background:#fff;color:#2e3436;font-family:Roboto,Arial,Helvetica,sans-serif;font-size:13px;font-weight:400;min-height:100vh}@charset "UTF-8";body{font-weight:400;overflow-y:hidden;-webkit-font-smoothing:antialiased;font-family:proxima-nova,sans-serif;line-height:1.5}@media only screen and (max-width: 655px){body{-webkit-overflow-scrolling:touch}}</style><link rel="stylesheet" href="./Test Cycle - Issue Details - uTest_files/styles.77c29b0f1dddf547.css" media="all" onload="this.media=&#39;all&#39;"><noscript><link rel="stylesheet" href="styles.77c29b0f1dddf547.css"></noscript><style></style><style type="text/css"></style><style>[_nghost-xun-c283]{display:block}.app-pending-container[_ngcontent-xun-c283]{height:100vh;display:flex;align-items:center;justify-content:center}</style><style>[_nghost-xun-c89]{height:45px;display:flex;align-items:center;justify-content:center}[_nghost-xun-c89]   .pending-indicator[_ngcontent-xun-c89]{border:4px solid #F0F0F0;border-top-color:#0272b4;border-radius:50%;animation-name:spinner;animation-duration:1.1s;animation-timing-function:linear;animation-iteration-count:infinite;width:28px;height:28px;box-sizing:border-box}[inline][_nghost-xun-c89]{display:inline}[inline][_nghost-xun-c89]   .pending-indicator[_ngcontent-xun-c89]{display:inline-block;height:1em;width:1em}.as-overlay[_nghost-xun-c89]{z-index:1;position:absolute;height:100%;width:100%;top:0;left:0;background:rgba(255,255,255,.6)}@keyframes spinner{0%{transform:rotate(0)}to{transform:rotate(360deg)}}</style><style>.faded-text[_ngcontent-xun-c295]{font-size:11px;font-style:italic;color:#66696b}[_nghost-xun-c295]{display:block;background:#282828;width:250px;height:100vh;color:#e6e7e8;font-size:16px}.pending-container[_ngcontent-xun-c295]{display:flex;height:100%;justify-content:center;align-items:center}</style><style>[_nghost-xun-c82]{display:block;padding:24px 50px}</style><style>[_nghost-xun-c293]{display:block;height:100%}</style><style>.faded-text[_ngcontent-xun-c285]{font-size:11px;font-style:italic;color:#66696b}[_nghost-xun-c285]{display:block;height:100%}.navigation[_ngcontent-xun-c285]{display:flex;flex-direction:column;height:100%}.scrollable[_ngcontent-xun-c285]{flex:1 1 auto;display:flex;flex-direction:column;overflow-y:auto;overflow-x:hidden}</style><style>[_nghost-xun-c286]{display:flex;justify-content:center;align-items:center;min-height:39px;padding-top:15px;padding-bottom:15px;box-sizing:content-box;border-bottom:solid 1px #404041}[_nghost-xun-c286]     a:focus{outline:1px dashed #FFF!important}[_nghost-xun-c286]     img{object-fit:scale-down;object-position:center;vertical-align:middle}</style><style>[_nghost-xun-c290]{display:block}.navigation-group-items-container[_ngcontent-xun-c290]{display:none}.navigation-group-items-container.expanded[_ngcontent-xun-c290]{display:block}</style><style>.faded-text[_ngcontent-xun-c287]{font-size:11px;font-style:italic;color:#66696b}[_nghost-xun-c287]{display:flex}.navigation-dropdown-handle--content[_ngcontent-xun-c287]{flex:1 1 auto;min-width:0}.navigation-dropdown__trigger-container[_ngcontent-xun-c287]{display:flex;align-items:center;width:24px;margin-right:20px}.navigation-dropdown__trigger-container[_ngcontent-xun-c287]   .navigation-dropdown__trigger[_ngcontent-xun-c287]{display:flex;align-items:center;justify-content:center;color:#d2d3d4;padding:0;background:none;border:none;width:24px;height:24px;line-height:1}.navigation-dropdown__trigger-container[_ngcontent-xun-c287]   .navigation-dropdown__trigger[_ngcontent-xun-c287]:focus, .navigation-dropdown__trigger-container[_ngcontent-xun-c287]   .navigation-dropdown__trigger[_ngcontent-xun-c287]:hover{outline:1px dashed #FFF!important}.navigation-dropdown__trigger-container[_ngcontent-xun-c287]   .navigation-dropdown__trigger[_ngcontent-xun-c287]   .arrow[_ngcontent-xun-c287]{padding-top:2px;font-size:19.2px}</style><style>.faded-text[_ngcontent-xun-c284]{font-size:11px;font-style:italic;color:#66696b}[_nghost-xun-c284]{display:flex;padding-top:15px;padding-left:15px;padding-bottom:15px}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]{flex:0 0 auto;position:relative}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .nav-sidebar-user-card__image[_ngcontent-xun-c284]{border-radius:50%}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]{position:absolute;top:3px;right:0;text-align:right;font-size:0;transform:translate(25%)}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge[_ngcontent-xun-c284]{border-radius:50%;width:16px;height:16px;border:2px solid #FFFFFF;color:#fff;right:0;font-size:10px;display:inline-block;text-align:center;margin:0 1px;line-height:12px}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-u[_ngcontent-xun-c284]{background:#00A8CC}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-u[_ngcontent-xun-c284]:after{content:"U";font-weight:700}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-m[_ngcontent-xun-c284]{background:#FDB900;color:#262626}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-m[_ngcontent-xun-c284]:after{content:"M";font-weight:700}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-pm[_ngcontent-xun-c284]{background:#22C064}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-pm[_ngcontent-xun-c284]:after{content:"PM";font-size:7px;vertical-align:middle;font-weight:700}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-ttl[_ngcontent-xun-c284]{background:#FA8513}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-ttl[_ngcontent-xun-c284]:after{content:"TTL";font-size:7px;vertical-align:middle;font-weight:700}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-a[_ngcontent-xun-c284]{background:#05A88B}.nav-sidebar-user-card__image-container[_ngcontent-xun-c284]   .avatar-badges-wrapper[_ngcontent-xun-c284]   .avatar-badge.avatar-badge-a[_ngcontent-xun-c284]:after{content:"A";font-weight:700}.nav-sidebar-user-card-info[_ngcontent-xun-c284]{padding:0 10px;flex:1 1 auto;min-width:0}.nav-sidebar-user-card-info__name[_ngcontent-xun-c284]{font-size:14.4px;overflow-wrap:break-word}.nav-sidebar-user-card-info__details[_ngcontent-xun-c284]{font-size:12.8px;color:#d2d3d4}.nav-sidebar-user-card-rating[_ngcontent-xun-c284]{background-color:#fff;background:linear-gradient(270deg,#FFFFFF 0%);color:#282828;border-radius:20px;margin-top:5px;display:inline-block;text-align:center;text-transform:uppercase;padding:0 10px;font-size:12.8px;font-weight:700}.nav-sidebar-user-card-rating.nav-sidebar-user-card-rating--unrated[_ngcontent-xun-c284]{background-color:#fff;color:#282828}.nav-sidebar-user-card-rating.nav-sidebar-user-card-rating--rated[_ngcontent-xun-c284]{background-color:#d2d3d4;color:#404041}.nav-sidebar-user-card-rating.nav-sidebar-user-card-rating--proven[_ngcontent-xun-c284]{background-color:#a29a8e;color:#fff}.nav-sidebar-user-card-rating.nav-sidebar-user-card-rating--bronze[_ngcontent-xun-c284]{background:linear-gradient(270deg,#A95911 0%,#DE9715 60%);color:#fff}.nav-sidebar-user-card-rating.nav-sidebar-user-card-rating--silver[_ngcontent-xun-c284]{background:linear-gradient(90deg,#FFFFFF 0%,#B2B9C2 60%);color:#282828}.nav-sidebar-user-card-rating.nav-sidebar-user-card-rating--gold[_ngcontent-xun-c284]{background:linear-gradient(270deg,#E4880B 0%,#FCBA00 60%);color:#282828}</style><style>.faded-text[_ngcontent-xun-c288]{font-size:11px;font-style:italic;color:#66696b}[_nghost-xun-c288]{display:flex;height:42px;color:#d2d3d4}[_nghost-xun-c288]:focus{color:inherit;outline:1px dashed #FFF!important}[_nghost-xun-c288]:hover{color:inherit;text-decoration:underline}[_nghost-xun-c288]   .navigation-item__icon[_ngcontent-xun-c288]{margin:12px 20px 0 22px}[_nghost-xun-c288]   .navigation-item__icon[_ngcontent-xun-c288]   i[_ngcontent-xun-c288]{font-size:19.2px}[_nghost-xun-c288]   .navigation-item__text[_ngcontent-xun-c288]{font-size:16px;font-weight:500;padding:10px 0}.active[_nghost-xun-c288]{border-left:solid 3px #027CC2;background:#404041;color:#fff;font-weight:700}  .ta-navigation-item-wrapper.active{border-left:solid 3px #027CC2;background:#404041}  .ta-navigation-item-wrapper.active .ta-navigation-item{color:#fff;font-weight:700}</style><style>[_nghost-xun-c291]{display:block;border-bottom:solid 1px #404041}[_nghost-xun-c291]     button.ta-navigation-group-item{margin:0;border:none;background:none}[_nghost-xun-c291]     .ta-navigation-group-item{display:block;font-size:14px;padding:6px 0 6px 61px;color:#9fa1a3}[_nghost-xun-c291]     .ta-navigation-group-item:focus, [_nghost-xun-c291]     .ta-navigation-group-item:hover{outline:none;text-decoration:underline}[_nghost-xun-c291]     .ta-navigation-group-item.active{background-color:#404041;color:#fff;font-weight:700}</style><style>.faded-text[_ngcontent-xun-c289]{font-size:11px;font-style:italic;color:#66696b}[_nghost-xun-c289]{margin-top:auto;display:block;padding:24px;border-top:solid 1px #404041;font-weight:500;font-size:14.4px}[_nghost-xun-c289]     a{padding:2px 0;color:#d2d3d4;display:block}[_nghost-xun-c289]     a:hover, [_nghost-xun-c289]     a:active, [_nghost-xun-c289]     a:focus{outline:none;text-decoration:underline}.navigation-footer__copyright[_ngcontent-xun-c289]{margin-top:30px}</style><style>.mat-icon{-webkit-user-select:none;user-select:none;background-repeat:no-repeat;display:inline-block;fill:currentColor;height:24px;width:24px;overflow:hidden}.mat-icon.mat-icon-inline{font-size:inherit;height:inherit;line-height:inherit;width:inherit}.mat-icon.mat-ligature-font[fontIcon]::before{content:attr(fontIcon)}[dir=rtl] .mat-icon-rtl-mirror{transform:scale(-1, 1)}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon{display:block}.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button .mat-icon,.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button .mat-icon{margin:auto}</style><style>[_nghost-xun-c84]{display:block;padding:24px 50px}</style><style>[_nghost-xun-c88]{display:block;padding:24px 50px}</style><style>[_nghost-xun-c95]{display:block;padding:24px 50px}</style><style>[_nghost-xun-c93]{display:block}.scroll-to-top-btn[_ngcontent-xun-c93]{padding:0 20px;border:none;background:none;color:#2779c3;transition:all .1s linear}.scroll-to-top-btn[_ngcontent-xun-c93]:focus{outline:none;color:#015e93;text-decoration:underline}.scroll-to-top-btn[_ngcontent-xun-c93]:hover{color:#015e93;text-decoration:underline}</style><style>[_nghost-xun-c100]{display:block;padding:24px 50px}</style><style>.faded-text[_ngcontent-xun-c98]{font-size:11px;font-style:italic;color:#66696b}[_nghost-xun-c98]{display:block}.collapsible-tabs-container[_ngcontent-xun-c98]{border-color:#ffffff12;border-width:1px 0 0 0;background-color:transparent;padding:0 50px}.tabs-header--mobile[_ngcontent-xun-c98]{display:flex;align-items:center}.tabs-header--mobile[_ngcontent-xun-c98]   .tabs-header__title--mobile[_ngcontent-xun-c98]{flex:1 0 auto;font-size:1.1em;padding-top:8px;padding-bottom:8px}.tabs-header--mobile[_ngcontent-xun-c98]   .tabs-toggle-btn[_ngcontent-xun-c98]{border:none;background:transparent;margin:0}.tabs-header--mobile[_ngcontent-xun-c98]   .tabs-toggle-btn[_ngcontent-xun-c98]   .tabs-toggle-btn-icon[_ngcontent-xun-c98]{margin-right:4px}@media screen and (min-width: 768px){.tabs-header--mobile[_ngcontent-xun-c98]{display:none}}@media screen and (max-width: 768px){.collapsible-tabs-container[_ngcontent-xun-c98]{padding:0 20px}.collapsed--mobile[_ngcontent-xun-c98]{display:none}}</style><style>[_nghost-xun-c96]{display:flex;flex-wrap:wrap;min-height:40px}@media screen and (max-width: 990px){[_nghost-xun-c96]{overflow-x:hidden}}</style><style>.faded-text[_ngcontent-xun-c97]{font-size:11px;font-style:italic;color:#66696b}[_nghost-xun-c97]{display:contents}.legacy-tab-btn[_ngcontent-xun-c97]{transition:.05s box-shadow linear;padding:10px 0 11px;margin:0 40px 0 0;color:#59595c;background-color:transparent;box-shadow:inset 0 0 0 0 transparent;text-transform:uppercase;font-size:11px;border:none}.legacy-tab-btn[_ngcontent-xun-c97]:hover:not(:disabled), .legacy-tab-btn[_ngcontent-xun-c97]:focus{box-shadow:inset 0 -3px #027cc2;color:#0270af;outline:0;background-color:transparent}.legacy-tab-btn.legacy-tab-btn--active[_ngcontent-xun-c97]{color:#0270af;box-shadow:inset 0 -3px #027cc2}.legacy-tab-btn[_ngcontent-xun-c97]:disabled{opacity:.5;background-color:transparent;cursor:not-allowed}.legacy-tab-btn[_ngcontent-xun-c97]:disabled:hover, .legacy-tab-btn[_ngcontent-xun-c97]:disabled:focus{background-color:transparent;box-shadow:none}</style><style>[_nghost-xun-c154]{display:block}</style><style>[_nghost-xun-c153]{display:block}</style><style>[_nghost-xun-c152]{display:block}</style><style>[_nghost-xun-c150]{display:block}</style><style>[_nghost-xun-c146]{display:block}</style><style>[_nghost-xun-c145]{display:block}</style><style>[_nghost-xun-c143]{display:block}</style><style>.share-button-host[_ngcontent-xun-c298]{display:flex}  .attachment-share-message{color:#fff;background-color:#000;font-size:12px;font-weight:600;line-height:16px;text-align:center;border:1px solid #E6E6E6;border-radius:4px;box-shadow:0 1px 2px #00000026;padding:8px 12px}  .attachment-share-message a{color:#489dcf;text-decoration:none}</style></head>
+<body class="nav-menu-open">
+  <tester-app _nghost-xun-c283="" ng-version="14.2.12">
+
+
+  <content-and-sidebar _ngcontent-xun-c283="" class="content-and-sidebar">
+<div class="flex-main page-main">
+  <div>
+    <button class="nav-sidebar-toggle" ng-click="$ctrl.toggleNavMenu()" aria-label="close sidebar navigation" aria-expanded="true">
+      <div ng-show="$ctrl.hideSidebar == true" aria-hidden="true" class="ng-hide">
+        <i class="material-icons">menu</i>
+      </div>
+      <div ng-show="$ctrl.hideSidebar == false" aria-hidden="false">
+        <i class="material-icons nav-sidebar-toggle--close">close</i>
+      </div>
+    </button>
+  </div>
+  <div id="skiptocontent"><a href="https://platform.utest.com/#mainContent" class="skip" ng-keydown="$ctrl.handleSkipKeydown($event)">skip to main content</a></div>
+  <ta-navigation-sidebar class="nav-sidebar" ng-hide="$ctrl.hideSidebar" [show-content]="$ctrl.showContent" _nghost-xun-c295="" ng-version="14.2.12" aria-hidden="false">
+  <ta-default-navigation _ngcontent-xun-c295="" _nghost-xun-c293=""><ta-navigation _ngcontent-xun-c293="" _nghost-xun-c285=""><nav _ngcontent-xun-c285="" class="navigation">
+  <ta-navigation-logo _ngcontent-xun-c293="" _nghost-xun-c286="">
+    <a _ngcontent-xun-c293="" href="https://www.utest.com/">
+      <img _ngcontent-xun-c293="" src="./Test Cycle - Issue Details - uTest_files/uTestLogoNav.svg" width="80" height="28" alt="uTest">
+    </a>
+  
+</ta-navigation-logo>
+
+  <div _ngcontent-xun-c285="" class="scrollable">
+    
+  
+
+  <ta-navigation-group _ngcontent-xun-c293="" label="User" _nghost-xun-c290=""><ta-navigation-group-handle _ngcontent-xun-c293="" _nghost-xun-c287=""><div _ngcontent-xun-c287="" class="navigation-dropdown-handle--content">
+  
+      <ta-user-card _ngcontent-xun-c293="" _nghost-xun-c284=""><div _ngcontent-xun-c284="" class="nav-sidebar-user-card__image-container">
+  <img _ngcontent-xun-c284="" width="32" height="32" class="nav-sidebar-user-card__image" src="./Test Cycle - Issue Details - uTest_files/image">
+
+  <span _ngcontent-xun-c284="" class="avatar-badges-wrapper">
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+  </span>
+</div>
+<div _ngcontent-xun-c284="" class="nav-sidebar-user-card-info">
+  <div _ngcontent-xun-c284="" class="nav-sidebar-user-card-info__name">
+    johnny medhane
+  </div>
+  <div _ngcontent-xun-c284="" class="nav-sidebar-user-card-info__details">
+    Tester ID: 947881
+  </div>
+  <div _ngcontent-xun-c284="" class="nav-sidebar-user-card-rating nav-sidebar-user-card-rating--rated" aria-label="Your Tester Rating: rated">
+    rated
+  </div>
+</div>
+</ta-user-card>
+    
+</div>
+
+<div _ngcontent-xun-c287="" class="navigation-dropdown__trigger-container">
+  <button _ngcontent-xun-c287="" type="button" class="navigation-dropdown__trigger" aria-label="Expand to see undefined menu" aria-expanded="false">
+    <!---->
+
+    <mat-icon _ngcontent-xun-c287="" role="img" inline="" class="mat-icon notranslate arrow material-icons mat-ligature-font mat-icon-inline mat-icon-no-color" aria-hidden="true" aria-label="Expand undefined Menu" data-mat-icon-type="font">
+      expand_more
+    </mat-icon><!---->
+  </button>
+</div>
+</ta-navigation-group-handle>
+
+<div _ngcontent-xun-c290="" class="navigation-group-items-container">
+  <ta-navigation-group-items _ngcontent-xun-c293="" _nghost-xun-c291="">
+      <a _ngcontent-xun-c293="" tanavigationgroupitem="" uisref="account.myProfile" href="https://platform.utest.com/account/my-profile" class="ta-navigation-group-item">Tester Profile</a>
+      <a _ngcontent-xun-c293="" tanavigationgroupitem="" target="_self" href="https://www.utest.com/profile/p947881/about" class="ta-navigation-group-item">Community Profile</a>
+      <a _ngcontent-xun-c293="" tanavigationgroupitem="" uisref="account.payments" href="https://platform.utest.com/account/payments" class="ta-navigation-group-item">Payments</a>
+      <a _ngcontent-xun-c293="" tanavigationgroupitem="" uisref="account.advanced" href="https://platform.utest.com/account/advanced" class="ta-navigation-group-item">Advanced Settings</a>
+
+      <button _ngcontent-xun-c293="" type="button" tanavigationgroupitem="" class="ta-navigation-group-item">Sign Out</button>
+    
+</ta-navigation-group-items><!---->
+</div>
+</ta-navigation-group>
+
+  <a _ngcontent-xun-c293="" tanavigationitem="" icon="home" _nghost-xun-c288="" href="https://www.utest.com/"><span _ngcontent-xun-c288="" class="navigation-item__icon">
+  <mat-icon _ngcontent-xun-c288="" role="img" aria-hidden="true" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" data-mat-icon-type="font">home</mat-icon><!---->
+</span>
+<span _ngcontent-xun-c288="" class="navigation-item__text">
+  Home
+</span>
+</a>
+  <a _ngcontent-xun-c293="" tanavigationitem="" icon="school" _nghost-xun-c288="" href="https://www.utest.com/academy"><span _ngcontent-xun-c288="" class="navigation-item__icon">
+  <mat-icon _ngcontent-xun-c288="" role="img" aria-hidden="true" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" data-mat-icon-type="font">school</mat-icon><!---->
+</span>
+<span _ngcontent-xun-c288="" class="navigation-item__text">
+  Academy
+</span>
+</a>
+
+  <ta-navigation-group _ngcontent-xun-c293="" label="Projects" _nghost-xun-c290=""><ta-navigation-group-handle _ngcontent-xun-c293="" _nghost-xun-c287="" class="ta-navigation-item-wrapper active"><div _ngcontent-xun-c287="" class="navigation-dropdown-handle--content">
+  
+      <a _ngcontent-xun-c293="" tanavigationitem="" icon="trip_origin" uisref="dashboard" _nghost-xun-c288="" href="https://platform.utest.com/dashboard" class="ta-navigation-item"><span _ngcontent-xun-c288="" class="navigation-item__icon">
+  <mat-icon _ngcontent-xun-c288="" role="img" aria-hidden="true" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" data-mat-icon-type="font">trip_origin</mat-icon><!---->
+</span>
+<span _ngcontent-xun-c288="" class="navigation-item__text">
+  Projects
+</span>
+</a>
+    
+</div>
+
+<div _ngcontent-xun-c287="" class="navigation-dropdown__trigger-container">
+  <button _ngcontent-xun-c287="" type="button" class="navigation-dropdown__trigger" aria-label="Expand to see undefined menu" aria-expanded="true">
+    <mat-icon _ngcontent-xun-c287="" role="img" inline="" class="mat-icon notranslate arrow material-icons mat-ligature-font mat-icon-inline mat-icon-no-color" aria-hidden="true" aria-label="Hide undefined Menu" data-mat-icon-type="font">
+      expand_less
+    </mat-icon><!---->
+
+    <!---->
+  </button>
+</div>
+</ta-navigation-group-handle>
+
+<div _ngcontent-xun-c290="" class="navigation-group-items-container expanded">
+  <ta-navigation-group-items _ngcontent-xun-c293="" _nghost-xun-c291="">
+      <a _ngcontent-xun-c293="" tanavigationgroupitem="" uisref="testcycles" href="https://platform.utest.com/testcycles" class="ta-navigation-group-item">
+        Test Cycles
+        <a _ngcontent-xun-c293="" uisref="testcycle" hidden="" href="https://platform.utest.com/"></a>
+      </a>
+
+      <a _ngcontent-xun-c293="" tanavigationgroupitem="" uisref="issues" href="https://platform.utest.com/issues" class="ta-navigation-group-item">Issues</a>
+      <a _ngcontent-xun-c293="" tanavigationgroupitem="" uisref="testcases" href="https://platform.utest.com/testcases" class="ta-navigation-group-item">Test Cases</a>
+      <a _ngcontent-xun-c293="" tanavigationgroupitem="" target="_self" href="https://www.utest.com/projects" class="ta-navigation-group-item">Projects Board</a>
+    
+</ta-navigation-group-items>
+</div>
+</ta-navigation-group>
+
+  <a _ngcontent-xun-c293="" tanavigationitem="" icon="people" _nghost-xun-c288="" href="https://www.utest.com/community"><span _ngcontent-xun-c288="" class="navigation-item__icon">
+  <mat-icon _ngcontent-xun-c288="" role="img" aria-hidden="true" class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color" data-mat-icon-type="font">people</mat-icon><!---->
+</span>
+<span _ngcontent-xun-c288="" class="navigation-item__text">
+  Community
+</span>
+</a>
+
+  <!---->
+
+  <ta-navigation-footer _ngcontent-xun-c293="" _nghost-xun-c289="" role="contentinfo">
+    <a _ngcontent-xun-c293="" href="https://www.utest.com/utest-guidelines">uTest Guidelines</a>
+    <a _ngcontent-xun-c293="" href="https://www.utest.com/terms-and-conditions">Terms &amp; Conditions</a>
+    <a _ngcontent-xun-c293="" href="https://www.utest.com/privacy-policy">Privacy Policy</a>
+  
+
+<div _ngcontent-xun-c289="" class="navigation-footer__copyright">
+  © 2023 Applause App Quality, Inc.
+</div>
+</ta-navigation-footer>
+
+  </div>
+</nav>
+</ta-navigation>
+</ta-default-navigation><!---->
+
+  <!---->
+<!----><!---->
+
+<!---->
+
+</ta-navigation-sidebar>
+
+  <!-- main container -->
+  <!----><div class="ntux-wrapper sidebar-open--ntux" ng-class="{&#39;sidebar-open--ntux&#39; : !$ctrl.hideSidebar}" ng-if="$ctrl.showContent">
+    <alert-header>
+<div class="ntux-alert-header">
+  <!---->
+</div>
+</alert-header>
+    <nav-header>
+<div class="ntux-nav-header" id="nav-bar-container">
+  <div class="container-fluid">
+    <div class="clearfix">
+      <!----><div ng-if="!$ctrl.belongsToPrivateCommunity">
+        <form class="ntux-nav-header-search ng-pristine ng-valid" ng-submit="$ctrl.submit()">
+          <span class="ntux-nav-header-search__button"><i class="material-icons">search</i></span>
+          <input class="ntux-nav-header-search__input ng-pristine ng-untouched ng-valid ng-empty" type="text" ng-model="$ctrl.query" placeholder="Search" aria-label="Search" aria-invalid="false">
+        </form>
+      </div><!---->
+      <div class="ntux-nav-header-buttons">
+        <nav-header-chat url="$ctrl.chatUrl">
+<div class="ntux-nav-header-buttons__item ntux-nav-header-chat">
+  <a class="ntux-nav-header-buttons__link ntux-nav-header-chat__link" ng-href="https://chat.utest.com" target="_blank" rel="noopener" ng-click="$ctrl.clearUnreadChatNotifications()" aria-label="Chat" href="https://chat.utest.com/">
+    <i aria-hidden="true" class="material-icons">chat_bubble</i>
+  </a>
+  <div class="ntux-nav-header-chat__dot ng-hide" ng-class="{&#39;ntux-nav-header-chat__dot--with-number&#39;: $ctrl.unreadMessageCount &gt; 0}" ng-show="$ctrl.hasUnreadMessages" aria-hidden="true"></div>
+</div>
+</nav-header-chat>
+        <!----><nav-header-notifications ng-if="!$ctrl.belongsToPrivateCommunity">
+<div class="ntux-nav-header-buttons__item ntux-nav-header-notifications">
+  <a class="ntux-nav-header-buttons__link" ng-href="https://www.utest.com/activity" aria-label="Notifications, new notifications" href="https://www.utest.com/activity">
+    <i class="material-icons" aria-hidden="true">notifications</i>
+  </a>
+  <div class="ntux-nav-header-notifications__dot" ng-show="$ctrl.hasUnreadActivities" aria-hidden="false"></div>
+</div>
+</nav-header-notifications><!---->
+        <nav-header-help>
+<div class="ntux-nav-header-buttons__item ntux-nav-header-help">
+  <a class="ntux-nav-header-buttons__link" href="https://support.utest.com/" target="_blank" rel="noopener">
+    <i class="material-icons">help</i>
+  </a>
+</div>
+</nav-header-help>
+      </div>
+    </div>
+  </div>
+</div>
+</nav-header>
+    <main id="mainContent" role="main" class="flex-section page-content" tabindex="-1">
+      <div class="tester-app">
+        <ng-transclude>
+    <ui-view _ngcontent-xun-c283=""><ta-test-cycle-route _nghost-xun-c100=""><!---->
+<div _ngcontent-xun-c100="">
+  <div _ngcontent-xun-c100="" class="testcycle main-page-content">
+    <div _ngcontent-xun-c100="" id="the-testcycle-header" class="testcycle-header">
+      <test-cycle-header _ngcontent-xun-c100="">
+<section id="topOfPage" class="testcycle-header-info">
+    <div class="issue-action-holder">
+        <!---->
+    </div>
+    <div class="issue-title testcycle-title">
+        <span class="issue-meta-id">
+            <a href="javascript:" ng-click="ctrl.navigateToTestCycleOverview()" aria-label="Test Cycle ID: #394545">#394545</a>
+            <span class="issue-meta-separator"></span>
+            <!----><span ng-if="ctrl.getIsPendingActivationOrNew()" aria-label="Activates on December 7th, 2022 at 12am "><span aria-hidden="true">12/07/2022 12:00am  - </span></span><!---->
+            <!---->
+            <!----><span ng-if="ctrl.testCycleInfo.deactivationDate" aria-label="Deactivates on December 12th, 2022 at 10pm  - 6 months ago"><span aria-hidden="true">
+                12/12/2022 10:07pm  -
+                <strong ng-show="ctrl.getLocksSoon()" aria-hidden="false"><i class="fa fa-clock-o"></i> 6 months ago</strong>
+                <span ng-show="!ctrl.getLocksSoon()" aria-hidden="true" class="ng-hide">6 months ago</span></span>
+            </span><!---->
+            <!---->
+        </span>
+        <h1>uTest Connect - Walla!Shops - EXP + TC - Dec 7, 22 / <span class="issue-title-type">Test Cycle</span></h1>
+    </div>
+
+    <div ng-attr-title="{{ctrl.getReportIssueTitle()}}" title="">
+        <!-- TODO: Create directive to create same as onerror="$(this).parent().hide()" on image-->
+        <!-- Note: (SP) this mechanism for hiding lack of an image was used in the old app for avatars. now we have the avatar filter to return a default image if there is none. i'm not sure this onerror was really here in the old app to catch an error as much as be a hacky way to hide if no image has been uploaded. if so, there's a better way. -->
+        <!---->
+    </div>
+
+    <a href="javascript:;" ng-click="ctrl.tcHeadStatusCollapse = !ctrl.tcHeadStatusCollapse" class="testcycle-header-status-toggle">Toggle Info</a>
+    <div class="testcycle-header-status-wrap collapse" uib-collapse="ctrl.tcHeadStatusCollapse" aria-label="Test Cycle Details" style="height: 0px;">
+        <div class="issue-status-item">
+            <label for="headerStatus">Status:</label>
+            <span id="headerStatus">
+                <!---->
+                <!----><span ng-if="!ctrl.getIsActivationRequested()" class="test-cycle-status test-cycle-status-4">Closed</span><!---->
+            </span>
+        </div>
+        <div class="issue-status-item">
+            <label for="headerTestingType">Type:</label>
+
+            <span aria-hidden="true" class="testing-type-icon testing-type-3139"></span>
+            <!---->
+            <!----><span id="headerTestingType" ng-if="ctrl.getProductDetailValueText()">Exploratory with Test Cases</span><!---->
+        </div>
+        <div class="issue-status-item">
+            <label for="headerCompany">Company:</label>
+            <span id="headerCompany">
+                SVcollege
+            </span>
+        </div>
+        <div class="issue-status-item">
+            <label for="headerProduct">Product:</label>
+            <span id="headerProduct">Walla!Shops</span>
+        </div>
+        <!----><div ng-if="ctrl.testCycleInfo.productVersion" class="issue-status-item">
+            <label for="headerProductVersion">Build:</label>
+            <span id="headerProductVersion">1</span>
+        </div><!---->
+        <!----><div ng-if="ctrl.testCycleInfo.deactivationDate" class="issue-status-item">
+            <label for="headerCycleEnd">Cycle End:</label>
+            <span id="headerCycleEnd">6 months ago</span>
+        </div><!---->
+
+        <!---->
+        <!---->
+        <!---->
+    </div>
+</section>
+</test-cycle-header>
+
+      <ta-test-cycle-route-tabs _ngcontent-xun-c100="" _nghost-xun-c98=""><nav _ngcontent-xun-c98="" aria-label="Test Cycle" class="collapsible-tabs-container">
+  <div _ngcontent-xun-c98="" class="tabs-header--mobile">
+    <h3 _ngcontent-xun-c98="" class="tabs-header__title--mobile">Issues</h3>
+    <button _ngcontent-xun-c98="" type="button" class="tabs-toggle-btn">
+      <span _ngcontent-xun-c98="" class="cdk-visually-hidden">Toggle navigation</span>
+      <i _ngcontent-xun-c98="" class="fa fa-bars tabs-toggle-btn-icon"></i> View
+    </button>
+  </div><!---->
+
+  <div _ngcontent-xun-c98="" class="collapsed--mobile">
+    <ta-tabs-legacy _ngcontent-xun-c98="" _nghost-xun-c96="" role="tablist">
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn" aria-selected="false">
+  
+        Overview
+      
+</button>
+</ta-tab-legacy>
+
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn" aria-selected="false">
+  
+        Slots
+      
+</button>
+</ta-tab-legacy><!---->
+
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn" aria-selected="false">
+  
+        Announcements
+      
+</button>
+</ta-tab-legacy><!---->
+
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn" aria-selected="false">
+  
+        Builds
+      
+</button>
+</ta-tab-legacy><!---->
+
+      <!---->
+
+      <!---->
+
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn legacy-tab-btn--active" aria-selected="true">
+  
+        Issues
+      
+</button>
+</ta-tab-legacy><!---->
+
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn" aria-selected="false">
+  
+        Test Cases
+      
+</button>
+</ta-tab-legacy><!---->
+
+      <!---->
+
+      <!---->
+
+      <!---->
+
+      <!---->
+
+      <!---->
+
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn" aria-selected="false">
+  
+        My Earnings
+      
+</button>
+</ta-tab-legacy><!---->
+
+      <!---->
+
+      <!---->
+
+      <ta-tab-legacy _ngcontent-xun-c98="" _nghost-xun-c97=""><button _ngcontent-xun-c97="" type="button" role="tab" class="legacy-tab-btn" aria-selected="false">
+  
+        Tester Scorecard
+      
+</button>
+</ta-tab-legacy><!---->
+
+      <!---->
+    
+</ta-tabs-legacy>
+  </div>
+</nav>
+</ta-test-cycle-route-tabs>
+    </div>
+
+    <div _ngcontent-xun-c100="" class="tab-content">
+      <ui-view _ngcontent-xun-c100="" name="details"><ta-test-cycle-tab-issues-route _nghost-xun-c146="">
+  <ui-view _ngcontent-xun-c146=""><ta-test-cycle-tab-issue-details-route _nghost-xun-c143=""><test-cycle-issue _ngcontent-xun-c143="">
+<issue issue-id="$ctrl.issueId" current-user="$ctrl.currentUser" test-cycle-info="$ctrl.testCycleInfo" show-paging="true" discarded="$ctrl.discarded()">
+<div class="bug-details" loading-spinner="false">
+  <!----><div class="issue" ng-if="ctrl.bugLoaded">
+    <div class="issue-head">
+
+      <div class="issue-meta">
+        <!----><single-record-pager ng-if="ctrl.showPaging" page-type="issues" url-param="issueId" class="issue-pager">
+<!---->
+</single-record-pager><!---->
+        <div class="issue-title">
+          <span class="issue-meta-id">
+            #5856176
+            <span class="issue-meta-separator"></span>
+            12/09/22 at 1:26 PM
+            <span class="issue-meta-separator"></span>
+            Test Cycle
+            #<a href="javascript:" ng-click="ctrl.gotoCycleOverview(ctrl.overviewTestCycleId)">394545</a>
+          </span>
+          <h3>Windows 10 - Chrome - User can't select size</h3>
+          <!---->
+          <!---->
+        </div>
+        <!----><div ng-if="!ctrl.isFromKnownIssueList" class="issue-action">
+          <!---->
+          <!----><button ng-if="ctrl.getShowCopyBugToClipboard()" clipboard="" text="ctrl.getClipboardText()" type="button" class="btn btn-default btn-export"><i class="fa fa-clipboard before" aria-label="Copy to Clipboard"></i></button><!---->
+        </div><!---->
+
+        <div class="issue-status">
+          <div class="issue-status-item">
+            <span class="username">
+              <!----><img ng-if="ctrl.bug &amp;&amp; ctrl.bug.createdById" alt="" class="avatar avatar-md" ng-src="https://prod-avatar-svc.cloud.applause.com/947881/image" src="./Test Cycle - Issue Details - uTest_files/91e95fb32ee23b4522978726bceb4068.jpg"><!---->
+            </span>
+            <div class="issue-info-with-image">
+              <span class="issue-status-term">Tester</span>
+              <span class="issue-status-def">
+                <a ng-click="ctrl.showSnapshot(ctrl.bug.createdById)" ng-bind="ctrl.bug.createdBy">johnny medhane</a>
+              </span>
+            </div>
+          </div>
+          <dl class="issue-status-item">
+            <dt>Status</dt>
+            <dd class="status-report">
+              <span class="bug-status status-2">
+                <span ng-bind="ctrl.getBugPendingStatusLabel(ctrl.bug.bugStatusId, ctrl.bug.bugStatus)">Approved</span>
+              </span>
+              <!---->
+              <!---->
+            </dd>
+          </dl>
+          <!----><dl ng-if="ctrl.bug.fixWorthinessLevel" class="issue-status-item">
+            <dt ng-attr-title="{{ctrl.bug.fixWorthinessLevel}}" title="somewhat valuable">Value</dt>
+            <dd ng-bind="ctrl.bug.fixWorthinessLevel">somewhat valuable</dd>
+          </dl><!---->
+          <dl class="issue-status-item">
+            <dt>Build</dt>
+            <dd ng-bind="ctrl.bug.productVersion">1</dd>
+          </dl>
+          <dl class="issue-status-item">
+            <dt>Modified</dt>
+            <dd ng-bind="ctrl.bug.lastChangeDate | formatLongUSDate">12/15/22 at 9:52 AM</dd>
+          </dl>
+          <dl class="issue-status-item">
+            <dt>Severity</dt>
+            <dd>
+              <span class="bug-detail-value severity-3" ng-bind="ctrl.bug.bugSeverity">High</span>
+            </dd>
+          </dl>
+          <dl class="issue-status-item">
+            <dt ng-attr-title="{{ctrl.bug.bugType}}" title="Functional">Issue Type</dt>
+            <dd ng-bind="ctrl.bug.bugType">Functional</dd>
+          </dl>
+          <!----><dl ng-if="ctrl.bug.bugSource != null" class="issue-status-item">
+            <dt ng-attr-title="{{ctrl.bug.bugSource.description}}" title="Exploratory">Source</dt>
+            <dd ng-bind="ctrl.bug.bugSource.description">Exploratory</dd>
+          </dl><!---->
+          <dl class="issue-status-item">
+            <dt ng-attr-title="{{ctrl.bug.bugFrequency}}" title="Every Time">Frequency</dt>
+            <dd ng-bind="ctrl.bug.bugFrequency">Every Time</dd>
+          </dl>
+
+          <dl class="issue-status-item">
+            <dt>Environment</dt>
+            <!----><dd ng-if="!ctrl.bug.environmentPairs.length &gt; 0">
+              <!----><span ng-repeat="environment in ctrl.bug.environments" class="bug-environment break-line" ng-attr-title="{{environment.description}}" title="Windows 10 - Chrome">
+                <span ng-bind-html="ctrl.getEnvironmentIconsObj(environment)"><i class="fa fa-windows env-icon"></i> <img alt="" class="env-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3NDU0ODY5RDJBNTgxMUU0OTI1OUNBNDc1QzVGRkI5MSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3NDU0ODY5RTJBNTgxMUU0OTI1OUNBNDc1QzVGRkI5MSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjc0NTQ4NjlCMkE1ODExRTQ5MjU5Q0E0NzVDNUZGQjkxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjc0NTQ4NjlDMkE1ODExRTQ5MjU5Q0E0NzVDNUZGQjkxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+3rRLuwAAUDJJREFUeNrsnQec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"></span> <span ng-bind-html="environment.description">Windows 10 - Chrome</span>
+              </span><!---->
+            </dd><!---->
+            <!---->
+            <!---->
+          </dl>
+
+          <!---->
+
+          <!---->
+        </div>
+      </div>
+      <!---->
+      <!---->
+    </div>
+
+    <div class="issue-content" loading-spinner="false" bug="ctrl.bug" current-user="ctrl.currentUser" duplicates="ctrl.possibleDuplicates" on-send-requested-info="ctrl.showRequestMoreInfoResponse()" on-toggle-dupewarner="ctrl.toggleDupewarner()" test-cycle-info="ctrl.testCycleInfo" is-editable="ctrl.isEditable" is-from-known-issue-list="ctrl.isFromKnownIssueList" show-customer-notes="ctrl.customerNoteView" init-messages="ctrl.initMessages" show-approve-reject="ctrl.getShowApproveReject()" show-recommendation="ctrl.getShowRecommendation()" on-reject-dupe="ctrl.showRejectForm(id)" on-recommend-reject-dupe="ctrl.showBugRecommendationForm(&#39;rejectduplicate&#39;, id)">
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+
+    <div>
+  <ul class="nav nav-tabs" ng-class="{&#39;nav-stacked&#39;: vertical, &#39;nav-justified&#39;: justified}" ng-transclude="">
+        <li ng-class="{active: active, disabled: disabled}" class="uib-tab active" heading="Description">
+  <a style="cursor: pointer;" ng-click="select()" uib-tab-heading-transclude="">Description</a>
+</li>
+        <!----><li ng-class="{active: active, disabled: disabled}" class="uib-tab" active="ctrl.isDiscussionActive" heading="Discussion" ng-if="ctrl.getShowBugMessages() || ctrl.getShowCustomerNotes()" select="ctrl.onShowDiscussion()">
+  <a style="cursor: pointer;" ng-click="select()" uib-tab-heading-transclude=""><uib-tab-heading>
+                Messages
+                <!---->
+            </uib-tab-heading></a>
+</li><!---->
+        <!---->
+    </ul>
+  <div class="tab-content">
+    <!----><div class="tab-pane active" ng-repeat="tab in tabs" ng-class="{active: tab.active}" uib-tab-content-transclude="tab">
+    
+            <dl class="list dl-horizontal issue-info-item">
+                <!---->
+                <!---->
+            </dl>
+            <dl class="list dl-horizontal issue-info-item">
+                <!---->
+                <!---->
+            </dl>
+            <dl class="list dl-horizontal issue-info-item">
+                <!---->
+                <!---->
+            </dl>
+
+            <!---->
+            <!----><dl ng-if="ctrl.possibleDuplicates.length" class="list dl-horizontal issue-info-item">
+                <dt>
+                    Duplicate Bug Warning
+                </dt>
+                <dd id="dupewarner-container">
+                    <div ng-class="{&#39;with-highlight&#39;: ctrl.showHighlight}" class="dupewarner" duplicates="ctrl.possibleDuplicates" test-cycle-id="ctrl.testCycleInfo.id" on-confirm-reproduction="ctrl.confirmIssue(id)" is-ttl="ctrl.isTTLforCycle()" show-recommendation="ctrl.showRecommendation()" show-reject="ctrl.showApproveReject()" on-reject-dupe="ctrl.onRejectDupe({id:id})" on-recommend-reject-dupe="ctrl.onRecommendRejectDupe({id:id})">
+    <div class="tester-intro">
+        <label class="control-label bug-detail-label"><i class="fa fa-exclamation-triangle"></i> Do not report duplicates</label>
+        <p>Make sure your issue was not already reported - <ng-pluralize count="ctrl.duplicates.length" when="{&#39;1&#39;:&#39;this&#39;, &#39;other&#39;:&#39;these&#39;}">this</ng-pluralize>
+            1 <ng-pluralize count="ctrl.duplicates.length" when="{&#39;1&#39;:&#39;issue looks&#39;, &#39;other&#39;:&#39;issues look&#39;}">issue looks</ng-pluralize> similar:</p>
+    </div>
+    <p>
+        <a ng-hide="ctrl.isTTL &amp;&amp; !ctrl.showMore" ng-click="ctrl.toggleHighlight()" href="https://platform.utest.com/" class="dupewarner-toggle-highlight" aria-hidden="false"><i class="fa fa-i-cursor before"></i>Highlight Duplicate Wording</a>
+    </p>
+    <ul class="bug-duplicate-list">
+        <!----><li ng-repeat="dupe in ctrl.initialDuplicates()" class="bug-duplicate bug-peek">
+            <bug-dupewarner-item dupe="dupe" is-from-known-issues-list="ctrl.isFromKnownIssuesList(dupe)" confirm-reproduction="ctrl.confirmReproduction(dupe.id)" reject-dupe="ctrl.rejectDupe(dupe.id)" recommend-dupe="ctrl.recommendRejectDupe(dupe.id)" show-reject="ctrl.showReject()" show-recommendation="ctrl.showRecommendation()">
+<span>
+  <a ng-show="$ctrl.showReject() &amp;&amp; !$ctrl.isFromKnownIssuesList" ng-click="$ctrl.rejectDupe({id:$ctrl.dupe.id})" href="javascript:" title="Reject current issue as duplicate to this similar issue" aria-hidden="true" class="ng-hide"><i class="fa fa-ban"></i></a>
+  <a ng-show="$ctrl.showRecommendation() &amp;&amp; !$ctrl.isFromKnownIssuesList" ng-click="$ctrl.recommendRejectDupe({id:$ctrl.dupe.id})" href="javascript:" title="Recommend a rejection for the current issue as duplicate to this similar issue" class="text-default ng-hide" aria-hidden="true"><i class="fa fa-ban"></i></a>
+  <a ng-show="!$ctrl.isFromKnownIssuesList" ng-click="$ctrl.confirmReproduction({id:$ctrl.dupe.id})" href="javascript:" class="bug-details-reproduce label label-default bug-dupe-confirm-button" aria-hidden="false"><i class="fa fa-plus"></i>1</a>
+  <span ng-show="$ctrl.isFromKnownIssuesList" class="known-issue-icon ng-hide" title="Known Issue reported in Test Cycle 394545" aria-hidden="true"><i class="fa fa-bookmark" aria-hidden="true"></i></span>
+  <a ui-sref="testcycle.issues.issue({issueId:$ctrl.dupe.id})" href="https://platform.utest.com/testcycles/394545/issues/5853569"><span class="bug-duplicate-subject" ng-bind-html="$ctrl.dupe.enhancedSubject">Windows 10 pro - Chrome - Home Page - <em>Select</em> delivery  requires logging in though the <em>user</em> is login</span></a>
+  <tester-tooltip html-text="&lt;h5&gt;Title&lt;/h5&gt;&lt;p&gt;Windows 10 pro - Chrome - Home Page - Select delivery  requires logging in though the user is login&lt;/p&gt;&lt;h5&gt;Actual Result&lt;/h5&gt;&lt;p&gt;A pop up windows appears with a request to add a delivery address and user isn&amp;#39;t login&lt;/p&gt;" location="right" max-height="250" style="padding-left: 5px">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="&lt;h5&gt;Title&lt;/h5&gt;&lt;p&gt;Windows 10 pro - Chrome - Home Page - Select delivery  requires logging in though the user is login&lt;/p&gt;&lt;h5&gt;Actual Result&lt;/h5&gt;&lt;p&gt;A pop up windows appears with a request to add a delivery address and user isn&amp;#39;t login&lt;/p&gt;" tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip>
+</span>
+</bug-dupewarner-item>
+        </li><!---->
+        <!---->
+        <a ng-show="ctrl.duplicates.length &gt; ctrl.numOfDupesToDisplay &amp;&amp; !ctrl.showMore" class="btn btn-default ng-hide" href="https://platform.utest.com/" ng-click="ctrl.showMore=true" aria-hidden="true">Show All Duplicates</a>
+    </ul>
+    <!---->
+    <!---->
+</div>
+                </dd>
+            </dl><!---->
+            <dl class="list dl-horizontal issue-info-item ng-hide" ng-show="(ctrl.reproductions &amp;&amp; ctrl.reproductions.length) || ctrl.getShowConfirmIssueButton()" current-user="ctrl.currentUser" my-reproduction="ctrl.myReproduction" on-confirm-reproduction="ctrl.confirmIssue(id)" reproductions="ctrl.bug.reproductions" same-user="ctrl.sameUser" test-cycle-info="ctrl.testCycleInfo" is-from-known-issue-list="ctrl.isFromKnownIssueList" on-edit-tester-reproduction="ctrl.editTesterReproduction(issueId,testerId)" issue-id="ctrl.bug.id" aria-hidden="true">
+    <dt>
+        Community Reproductions
+    </dt>
+    <dd>
+
+        <!---->
+        <a href="https://platform.utest.com/" ng-click="ctrl.toggleDetails()" ng-show="ctrl.reproductions &amp;&amp; ctrl.reproductions.length" ng-bind="ctrl.showDetails ? &#39;Hide Reproductions&#39; : &#39;Show &#39; + ctrl.reproductions.length + &#39; Reproductions&#39;" aria-hidden="true" class="ng-hide">Show 0 Reproductions</a>
+        <!----><div ng-if="!ctrl.showDetails" class="tester-avatars">
+            <!---->
+        </div><!---->
+        <!---->
+    </dd>
+</dl>
+            <!---->
+            <!----><dl ng-if="ctrl.showAppComponent" class="list dl-horizontal issue-info-item">
+                <dt>
+                    Component
+                </dt>
+                <dd ng-bind-html="ctrl.appComponentDisplayName | escape | convertNewline">Product Page (PDP)</dd>
+            </dl><!---->
+            <!----><dl ng-if="ctrl.getHasActionPerformed()" class="list dl-horizontal issue-info-item">
+                <dt>
+                    Action Performed
+                </dt>
+                <dd html-compile-unsafe="ctrl.bug.actionPerformed | escape | linkyUnsanitizedWithQRcode | convertNewline">1. Open  <a target="_blank" rel="noopener" href="https://www.wallashops.co.il/">https://www.wallashops.co.il/</a><qr-code-link file-heading="&#39;URL&#39;" file-name="&#39;&#39;" url="&#39;https://www.wallashops.co.il/&#39;">
+<a href="javascript:" ng-click="$ctrl.showQrCodeDialog()" class="type qr-code-trigger attach-qr" tabindex="-1" aria-hidden="true">
+    <i class="fa fa-qrcode"></i>
+</a>
+<!---->
+</qr-code-link><br>2. Write "בלנסטון" on search bar<br>3. Choose  "Blundston 565" from search result list<br>4. Try to select size</dd>
+            </dl><!---->
+            <!----><dl ng-if="ctrl.getHasExpectedResult()" class="list dl-horizontal issue-info-item">
+                <dt>
+                    <span ng-bind="ctrl.getBugExpectedResultText()">Expected Result</span>
+                </dt>
+                <dd html-compile-unsafe="ctrl.bug.expectedResult | escape | linkyUnsanitizedWithQRcode | convertNewline">PDP works correctly, user can select size</dd>
+            </dl><!---->
+            <!----><dl ng-if="ctrl.getHasResult()" class="list dl-horizontal issue-info-item">
+                <dt>
+                    <span ng-bind="ctrl.getBugResultText()">Actual Result</span>
+                </dt>
+                <dd html-compile-unsafe="ctrl.bug.result | escape | linkyUnsanitizedWithQRcode | convertNewline">There is no  option to select size</dd>
+            </dl><!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            <!----><dl class="list dl-horizontal issue-info-item" ng-repeat="field in ctrl.bug.customFields | orderBy:&#39;order&#39;" field="field">
+  <dt>
+      <span>Device and OS</span>
+      <!----><tester-tooltip ng-if="ctrl.field.description" html-text="Full name of device and OS version, e.g.: iPhone XS/iOS 13.3, Windows 10, etc." location="right">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="Full name of device and OS version, e.g.: iPhone XS/iOS 13.3, Windows 10, etc." tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip><!---->
+  </dt>
+  <dd html-compile-unsafe="ctrl.field.displayValue | escape | linkyUnsanitizedWithQRcode | convertNewline">Windiws 10/Chrome</dd>
+</dl><!----><dl class="list dl-horizontal issue-info-item" ng-repeat="field in ctrl.bug.customFields | orderBy:&#39;order&#39;" field="field">
+  <dt>
+      <span>Reproducibility (x of y times)</span>
+      <!----><tester-tooltip ng-if="ctrl.field.description" html-text="Document how often you tried this and how often the issue occured (x out of y times)" location="right">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="Document how often you tried this and how often the issue occured (x out of y times)" tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip><!---->
+  </dt>
+  <dd html-compile-unsafe="ctrl.field.displayValue | escape | linkyUnsanitizedWithQRcode | convertNewline">5/5</dd>
+</dl><!----><dl class="list dl-horizontal issue-info-item" ng-repeat="field in ctrl.bug.customFields | orderBy:&#39;order&#39;" field="field">
+  <dt>
+      <span>Link to the item tested</span>
+      <!----><tester-tooltip ng-if="ctrl.field.description" html-text="If not relevant, enter N/A" location="right">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="If not relevant, enter N/A" tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip><!---->
+  </dt>
+  <dd html-compile-unsafe="ctrl.field.displayValue | escape | linkyUnsanitizedWithQRcode | convertNewline"><a target="_blank" rel="noopener" href="https://www.wallashops.co.il/%D7%A0%D7%A2%D7%9C%D7%99-%D7%91%D7%9C%D7%A0%D7%A1%D7%98%D7%95%D7%9F-%D7%9C%D7%99%D7%9C%D7%93%D7%99%D7%9D-%D7%93%D7%92%D7%9D-565-%D7%91%D7%A6%D7%91%D7%A2-%D7%97%D7%95%D7%9D-%D7%9B%D7%94%D7%94/9MM9MM3443235510-S_6d90484b-S_77e2b909.html">https://www.wallashops.co.il/%D7%A0%D7%A2%D7%9C%D7%99-%D7%91%D7%9C%D7%A0%D7%A1%D7%98%D7%95%D7%9F-%D7%9C%D7%99%D7%9C%D7%93%D7%99%D7%9D-%D7%93%D7%92%D7%9D-565-%D7%91%D7%A6%D7%91%D7%A2-%D7%97%D7%95%D7%9D-%D7%9B%D7%94%D7%94/9MM9MM3443235510-S_6d90484b-S_77e2b909.html</a><qr-code-link file-heading="&#39;URL&#39;" file-name="&#39;&#39;" url="&#39;https://www.wallashops.co.il/%D7%A0%D7%A2%D7%9C%D7%99-%D7%91%D7%9C%D7%A0%D7%A1%D7%98%D7%95%D7%9F-%D7%9C%D7%99%D7%9C%D7%93%D7%99%D7%9D-%D7%93%D7%92%D7%9D-565-%D7%91%D7%A6%D7%91%D7%A2-%D7%97%D7%95%D7%9D-%D7%9B%D7%94%D7%94/9MM9MM3443235510-S_6d90484b-S_77e2b909.html&#39;">
+<a href="javascript:" ng-click="$ctrl.showQrCodeDialog()" class="type qr-code-trigger attach-qr" tabindex="-1" aria-hidden="true">
+    <i class="fa fa-qrcode"></i>
+</a>
+<!---->
+</qr-code-link></dd>
+</dl><!----><dl class="list dl-horizontal issue-info-item" ng-repeat="field in ctrl.bug.customFields | orderBy:&#39;order&#39;" field="field">
+  <dt>
+      <span>Does the issue reproduce in incognito mode?	</span>
+      <!----><tester-tooltip ng-if="ctrl.field.description" html-text="Mandatory" location="right">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="Mandatory" tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip><!---->
+  </dt>
+  <dd html-compile-unsafe="ctrl.field.displayValue | escape | linkyUnsanitizedWithQRcode | convertNewline">Yes</dd>
+</dl><!----><dl class="list dl-horizontal issue-info-item" ng-repeat="field in ctrl.bug.customFields | orderBy:&#39;order&#39;" field="field">
+  <dt>
+      <span>Did you upload a screenshot marking the issue?</span>
+      <!----><tester-tooltip ng-if="ctrl.field.description" html-text="Mandatory. The issue/area should be marked with a red rectangle." location="right">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="Mandatory. The issue/area should be marked with a red rectangle." tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip><!---->
+  </dt>
+  <dd html-compile-unsafe="ctrl.field.displayValue | escape | linkyUnsanitizedWithQRcode | convertNewline">Yes</dd>
+</dl><!----><dl class="list dl-horizontal issue-info-item" ng-repeat="field in ctrl.bug.customFields | orderBy:&#39;order&#39;" field="field">
+  <dt>
+      <span>Did you upload a video in mp4 format?	</span>
+      <!----><tester-tooltip ng-if="ctrl.field.description" html-text="Mandatory. Please see instructions in the overview." location="right">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="Mandatory. Please see instructions in the overview." tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip><!---->
+  </dt>
+  <dd html-compile-unsafe="ctrl.field.displayValue | escape | linkyUnsanitizedWithQRcode | convertNewline">Yes</dd>
+</dl><!----><dl class="list dl-horizontal issue-info-item" ng-repeat="field in ctrl.bug.customFields | orderBy:&#39;order&#39;" field="field">
+  <dt>
+      <span>Did you upload a log file?</span>
+      <!----><tester-tooltip ng-if="ctrl.field.description" html-text="Mandatory. Please see instructions in the overview." location="right">
+<button class="fa fa-info-circle tester-tooltip-btn" uib-tooltip-html="$ctrl.tooltipHtml" tooltip-trigger="mouseenter click outsideClick" tooltip-is-open="$ctrl.isTooltipOpen" aria-label="Mandatory. Please see instructions in the overview." tooltip-placement="right" ng-click="$event.preventDefault()" type="button">
+      </button>
+</tester-tooltip><!---->
+  </dt>
+  <dd html-compile-unsafe="ctrl.field.displayValue | escape | linkyUnsanitizedWithQRcode | convertNewline">Yes</dd>
+</dl><!---->
+
+            <!----><dl ng-if="ctrl.getShowAttachments()" class="dl-horizontal list issue-info-item">
+                <dt>
+                    Attachments
+                </dt>
+                <dd>
+                    <div class="attach-wrap">
+                        <!----><div ng-if="(ctrl.sameUser &amp;&amp; !(ctrl.isPending || ctrl.isRejected || ctrl.isDiscarded)) || (ctrl.sameUser &amp;&amp; ctrl.isApproved) || ctrl.isTTLforCycle()">
+                            <file-upload auto-upload="true" allow-multiple="true" max-attachments="" max-attachment-size="104857600" entity-id="5856176" entity-type-id="1" attachment-type-id="1" on-upload-complete="ctrl.onUploadComplete">
+<div class="attach-wrap">
+    <div class="dropzone-wrapper">
+        <div class="file-dropzone ng-pristine ng-untouched ng-valid ng-not-empty" ngf-drop="" ngf-drag-over-class="&#39;active&#39;" ngf-multiple="allowMultiple" ng-model="files" ngf-keep="true" ngf-validate-fn="validate($file)" ngf-ignore-invalid="&#39;validateFn&#39;" ngf-accept="acceptType" ngf-pattern="" ngf-change="onFileChange($files, $file, $newFiles)" disable-autosave="" ngf-before-model-change="beforeChange($files)" aria-invalid="false">
+            <div class="h4">Drag a file here</div>
+            <span class="or">or just...</span>
+            <div class="uploader">
+                <input type="file" ngf-select="" disable-autosave="" ng-model="files" name="" ng-hide="autoUpload" ngf-multiple="true" ngf-keep="true" ng-disabled="isUploading" ngf-accept="acceptType" ngf-pattern="" ngf-validate-fn="validate($file)" ngf-ignore-invalid="&#39;validateFn&#39;" ngf-change="onFileChange($files, $file, $newFiles)" id="filesUploaded" aria-describedby="filesUploadedError" ngf-before-model-change="beforeChange($files)" ng-required="isRequired()" class="ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-required ng-hide" multiple="multiple" aria-hidden="true" aria-invalid="false">
+                
+                <input type="file" disable-autosave="" ng-model="tmpFiles" ngf-select="autoUploadFiles($files)" ng-show="autoUpload" ngf-multiple="true" ngf-keep="true" ngf-accept="acceptType" ngf-pattern="" ngf-validate-fn="validate($file)" ngf-ignore-invalid="&#39;validateFn&#39;" ngf-before-model-change="beforeChange($files)" class="ng-pristine ng-untouched ng-valid ng-not-empty" multiple="multiple" aria-hidden="false" aria-invalid="false">
+                
+                <input name="" type="hidden" disable-autosave="" ng-model="fileCount" required-when="isRequired()" autocomplete="off" class="ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-required-when">
+                
+            </div>
+        </div>
+    </div>
+    <!---->
+    
+</div>
+</file-upload>
+                        </div><!---->
+                        <!----><attachment class="attach" ng-repeat="a in ctrl.bug.attachments" attachment="a" can-delete="ctrl.canDeleteAttachment()" current-user="ctrl.currentUser" on-delete="ctrl.onDeleteAttachment(a)">
+<!---->
+
+<!----><span class="attach-item" ng-if="!ctrl.useOTARendering" ng-class="{ota: ctrl.useOTARendering}">
+    <!---->
+    <!----><span ng-if="!ctrl.isEncoding()">
+        <!---->
+        <!----><div class="attach-preview" ng-if="ctrl.showPlaceholder()">
+            <a ng-href="https://platform.utest.com/services/links/v1/internal/40489397?.txt" rel="nofollow" target="_blank" class="attach-img-link" href="https://platform.utest.com/services/links/v1/internal/40489397?.txt">
+                <img ng-src="/assets/images/default-file-icon.svg" alt="Bug5856176_wallashop_log.txt" class="attach-placeholder" src="./Test Cycle - Issue Details - uTest_files/default-file-icon.svg">
+            </a>
+        </div><!---->
+        <!---->
+        <span>
+            <a class="name" ng-href="https://platform.utest.com/services/links/v1/internal/40489397?.txt" rel="nofollow" target="_blank" ng-attr-title="{{ctrl.attachment.fileName}}" href="https://platform.utest.com/services/links/v1/internal/40489397?.txt" title="Bug5856176_wallashop_log.txt">
+                wallashop log.txt
+            </a><!----><span ng-if="ctrl.attachment.fileSize" class="attach-filesize" ng-bind="&#39;- &#39; + ctrl.renderFileSize(ctrl.attachment.fileSize)">- 101 KB</span><!---->
+        </span>
+        <div class="attach-actions">
+            <qr-code-link file-name="ctrl.cleanFileName" url="ctrl.storageURL" is-open-inline="ctrl.isQrCodeOpenInline">
+<a href="javascript:" ng-click="$ctrl.showQrCodeDialog()" class="type qr-code-trigger attach-qr" tabindex="-1" aria-hidden="true">
+    <i class="fa fa-qrcode"></i>
+</a>
+<!---->
+</qr-code-link>
+            <!----><ngf-attachment-share-button ng-if="ctrl.attachment.canShareExternalLink" [attachment-id]="ctrl.attachment.id" _nghost-xun-c298="" ng-version="14.2.12"><span _ngcontent-xun-c298="" class="share-button-host">
+  
+                <a href="javascript:" tabindex="-1" aria-hidden="true" title="Click to copy a shareable link to the clipboard">
+                    <i class="fa fa-share-alt"></i>
+                </a>
+            
+</span><!---->
+
+<!----></ngf-attachment-share-button><!---->
+        </div>
+    </span><!---->
+    <div class="attach-desc">
+        <!---->
+        <!---->
+        <ng-transclude></ng-transclude>
+    </div>
+</span><!---->
+</attachment><!----><attachment class="attach" ng-repeat="a in ctrl.bug.attachments" attachment="a" can-delete="ctrl.canDeleteAttachment()" current-user="ctrl.currentUser" on-delete="ctrl.onDeleteAttachment(a)">
+<!---->
+
+<!----><span class="attach-item" ng-if="!ctrl.useOTARendering" ng-class="{ota: ctrl.useOTARendering}">
+    <!---->
+    <!----><span ng-if="!ctrl.isEncoding()">
+        <!---->
+        <!---->
+        <!----><div class="attach-preview" ng-if="ctrl.showVideoEmbedded()">
+            <video class="video-js" controls="" preload="none" data-setup="{}">
+                <!----><source ng-repeat="source in ctrl.videoSource.sources" src="https://platform.utest.com/services/links/v1/internal/40489642?.mp4" type="video/mp4"><!---->
+            </video>
+        </div><!---->
+        <span>
+            <a class="name" ng-href="https://platform.utest.com/services/links/v1/internal/40489642?.mp4" rel="nofollow" target="_blank" ng-attr-title="{{ctrl.attachment.fileName}}" href="https://platform.utest.com/services/links/v1/internal/40489642?.mp4" title="Bug5856176_Recording__31.mp4">
+                Recording  31.mp4
+            </a><!----><span ng-if="ctrl.attachment.fileSize" class="attach-filesize" ng-bind="&#39;- &#39; + ctrl.renderFileSize(ctrl.attachment.fileSize)">- 2.92 MB</span><!---->
+        </span>
+        <div class="attach-actions">
+            <qr-code-link file-name="ctrl.cleanFileName" url="ctrl.storageURL" is-open-inline="ctrl.isQrCodeOpenInline">
+<a href="javascript:" ng-click="$ctrl.showQrCodeDialog()" class="type qr-code-trigger attach-qr" tabindex="-1" aria-hidden="true">
+    <i class="fa fa-qrcode"></i>
+</a>
+<!---->
+</qr-code-link>
+            <!----><ngf-attachment-share-button ng-if="ctrl.attachment.canShareExternalLink" [attachment-id]="ctrl.attachment.id" _nghost-xun-c298="" ng-version="14.2.12"><span _ngcontent-xun-c298="" class="share-button-host">
+  
+                <a href="javascript:" tabindex="-1" aria-hidden="true" title="Click to copy a shareable link to the clipboard">
+                    <i class="fa fa-share-alt"></i>
+                </a>
+            
+</span><!---->
+
+<!----></ngf-attachment-share-button><!---->
+        </div>
+    </span><!---->
+    <div class="attach-desc">
+        <!---->
+        <!---->
+        <ng-transclude></ng-transclude>
+    </div>
+</span><!---->
+</attachment><!----><attachment class="attach" ng-repeat="a in ctrl.bug.attachments" attachment="a" can-delete="ctrl.canDeleteAttachment()" current-user="ctrl.currentUser" on-delete="ctrl.onDeleteAttachment(a)">
+<!---->
+
+<!----><span class="attach-item" ng-if="!ctrl.useOTARendering" ng-class="{ota: ctrl.useOTARendering}">
+    <!---->
+    <!----><span ng-if="!ctrl.isEncoding()">
+        <!----><div class="attach-preview" ng-if="ctrl.showImageInline()">
+            <a ng-href="https://platform.utest.com/services/links/v1/internal/40493226?.png" rel="nofollow" target="_blank" class="attach-img-link" href="https://platform.utest.com/services/links/v1/internal/40493226?.png">
+                <img ng-src="https://platform.utest.com/services/links/v1/internal/40493226?.png" alt="Bug5856176_Blanston.png" class="attach-img" src="https://platform.utest.com/services/links/v1/internal/40493226?.png">
+            </a>
+        </div><!---->
+        <!---->
+        <!---->
+        <span>
+            <a class="name" ng-href="https://platform.utest.com/services/links/v1/internal/40493226?.png" rel="nofollow" target="_blank" ng-attr-title="{{ctrl.attachment.fileName}}" href="https://platform.utest.com/services/links/v1/internal/40493226?.png" title="Bug5856176_Blanston.png">
+                Blanston.png
+            </a><!----><span ng-if="ctrl.attachment.fileSize" class="attach-filesize" ng-bind="&#39;- &#39; + ctrl.renderFileSize(ctrl.attachment.fileSize)">- 266 KB</span><!---->
+        </span>
+        <div class="attach-actions">
+            <qr-code-link file-name="ctrl.cleanFileName" url="ctrl.storageURL" is-open-inline="ctrl.isQrCodeOpenInline">
+<a href="javascript:" ng-click="$ctrl.showQrCodeDialog()" class="type qr-code-trigger attach-qr" tabindex="-1" aria-hidden="true">
+    <i class="fa fa-qrcode"></i>
+</a>
+<!---->
+</qr-code-link>
+            <!----><ngf-attachment-share-button ng-if="ctrl.attachment.canShareExternalLink" [attachment-id]="ctrl.attachment.id" _nghost-xun-c298="" ng-version="14.2.12"><span _ngcontent-xun-c298="" class="share-button-host">
+  
+                <a href="javascript:" tabindex="-1" aria-hidden="true" title="Click to copy a shareable link to the clipboard">
+                    <i class="fa fa-share-alt"></i>
+                </a>
+            
+</span><!---->
+
+<!----></ngf-attachment-share-button><!---->
+        </div>
+    </span><!---->
+    <div class="attach-desc">
+        <!---->
+        <!---->
+        <ng-transclude></ng-transclude>
+    </div>
+</span><!---->
+</attachment><!----><attachment class="attach" ng-repeat="a in ctrl.bug.attachments" attachment="a" can-delete="ctrl.canDeleteAttachment()" current-user="ctrl.currentUser" on-delete="ctrl.onDeleteAttachment(a)">
+<!---->
+
+<!----><span class="attach-item" ng-if="!ctrl.useOTARendering" ng-class="{ota: ctrl.useOTARendering}">
+    <!---->
+    <!----><span ng-if="!ctrl.isEncoding()">
+        <!----><div class="attach-preview" ng-if="ctrl.showImageInline()">
+            <a ng-href="https://platform.utest.com/services/links/v1/internal/40493249?.png" rel="nofollow" target="_blank" class="attach-img-link" href="https://platform.utest.com/services/links/v1/internal/40493249?.png">
+                <img ng-src="https://platform.utest.com/services/links/v1/internal/40493249?.png" alt="Bug5856176_PDG_pic.png" class="attach-img" src="https://platform.utest.com/services/links/v1/internal/40493249?.png">
+            </a>
+        </div><!---->
+        <!---->
+        <!---->
+        <span>
+            <a class="name" ng-href="https://platform.utest.com/services/links/v1/internal/40493249?.png" rel="nofollow" target="_blank" ng-attr-title="{{ctrl.attachment.fileName}}" href="https://platform.utest.com/services/links/v1/internal/40493249?.png" title="Bug5856176_PDG_pic.png">
+                PDG pic.png
+            </a><!----><span ng-if="ctrl.attachment.fileSize" class="attach-filesize" ng-bind="&#39;- &#39; + ctrl.renderFileSize(ctrl.attachment.fileSize)">- 136 KB</span><!---->
+        </span>
+        <div class="attach-actions">
+            <qr-code-link file-name="ctrl.cleanFileName" url="ctrl.storageURL" is-open-inline="ctrl.isQrCodeOpenInline">
+<a href="javascript:" ng-click="$ctrl.showQrCodeDialog()" class="type qr-code-trigger attach-qr" tabindex="-1" aria-hidden="true">
+    <i class="fa fa-qrcode"></i>
+</a>
+<!---->
+</qr-code-link>
+            <!----><ngf-attachment-share-button ng-if="ctrl.attachment.canShareExternalLink" [attachment-id]="ctrl.attachment.id" _nghost-xun-c298="" ng-version="14.2.12"><span _ngcontent-xun-c298="" class="share-button-host">
+  
+                <a href="javascript:" tabindex="-1" aria-hidden="true" title="Click to copy a shareable link to the clipboard">
+                    <i class="fa fa-share-alt"></i>
+                </a>
+            
+</span><!---->
+
+<!----></ngf-attachment-share-button><!---->
+        </div>
+    </span><!---->
+    <div class="attach-desc">
+        <!---->
+        <!---->
+        <ng-transclude></ng-transclude>
+    </div>
+</span><!---->
+</attachment><!---->
+                    </div>
+                </dd>
+
+            </dl><!---->
+
+
+        </div><!----><div class="tab-pane" ng-repeat="tab in tabs" ng-class="{active: tab.active}" uib-tab-content-transclude="tab">
+    
+
+            
+
+            <!----><div ng-if="ctrl.getShowBugMessages()" class="bug-messages">
+                <h3 class="no-top-padding">
+                    <!----><a href="javascript:" ng-if="ctrl.getShowNewMessageButton()" ng-click="ctrl.toggleNewMessage()" class="btn btn-default">New Message</a><!---->
+                    <!---->
+                </h3>
+                <span class="messages-wrapper" is-internal="false" messages="ctrl.bug.messages" on-add-new-message="ctrl.addNewMessage(msg)" show-new-message="ctrl.showNewMessage" on-delete-message="ctrl.deleteMessage" current-user="ctrl.currentUser" bug="ctrl.bug">
+    <div class="new-message ng-hide" loading-spinner="" ng-show="ctrl.showNewMessage" bug="ctrl.bug" current-user="ctrl.currentUser" is-internal="ctrl.isInternal" is-visible="ctrl.showNewMessage" on-submit="ctrl.addNewMessage(msg)" test-run-result="ctrl.testRunResult" aria-hidden="true">
+    <textarea msd-elastic="" ng-model="ctrl.message" autofocus="autofocus" class="form-control ng-pristine ng-untouched ng-valid ng-empty" trigger-input="" aria-invalid="false" style="overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 50px;"></textarea>
+    <div class="controls">
+        <button type="button" class="btn new-message-cancel btn-link" href="" ng-click="ctrl.cancel()">Cancel</button>
+        <button type="button" class="btn btn-primary new-message-submit" ng-disabled="!ctrl.message" href="" ng-click="ctrl.submit()" disabled="disabled">Add</button>
+    </div>
+</div>
+    <!----><blockquote ng-repeat="message in ctrl.messages" class="chat-bubble with-desc">
+        <span class="username">
+            <img ng-src="https://prod-avatar-svc.cloud.applause.com/947881/image" class="avatar avatar-xs" src="./Test Cycle - Issue Details - uTest_files/91e95fb32ee23b4522978726bceb4068.jpg">
+        </span>
+        <span class="chat-desc">
+            6 months ago (12/11/2022) by
+            <a ng-hide="message.userRole === &#39;PM&#39; || message.userRole === &#39;TM&#39; || message.userRole === &#39;TE&#39; || message.userRole === &#39;TSM&#39; || message.userRole === &#39;CM&#39; || message.userRole === null" href="javascript:" ng-click="ctrl.showSnapshot(message.userId)" aria-hidden="false">johnny medhane</a>
+            <span ng-show="message.userRole === &#39;PM&#39; || message.userRole === &#39;TM&#39; || message.userRole === &#39;TE&#39; || message.userRole === &#39;TSM&#39; || message.userRole === &#39;CM&#39; " aria-hidden="true" class="ng-hide">johnny medhane</span>
+            <span ng-show="message.userRole === null" aria-hidden="true" class="ng-hide">johnny medhane</span>
+        </span>
+        <div class="message-container">
+          <p class="full-width" ng-class="{ deleted: message.deleted}" html-compile-unsafe="message.message | escape | linkyUnsanitizedWithQRcode | convertNewline">hii   TTL Boris Sionov , i just fixe the requested info, thankyou for correcting me!</p>
+                          <!---->
+        </div>
+    </blockquote><!----><blockquote ng-repeat="message in ctrl.messages" class="chat-bubble with-desc">
+        <span class="username">
+            <img ng-src="https://prod-avatar-svc.cloud.applause.com/412145/image" class="avatar avatar-xs" src="./Test Cycle - Issue Details - uTest_files/image">
+        </span>
+        <span class="chat-desc">
+            6 months ago (12/11/2022) by
+            <a ng-hide="message.userRole === &#39;PM&#39; || message.userRole === &#39;TM&#39; || message.userRole === &#39;TE&#39; || message.userRole === &#39;TSM&#39; || message.userRole === &#39;CM&#39; || message.userRole === null" href="javascript:" ng-click="ctrl.showSnapshot(message.userId)" aria-hidden="false">Boris Sionov (TTL)</a>
+            <span ng-show="message.userRole === &#39;PM&#39; || message.userRole === &#39;TM&#39; || message.userRole === &#39;TE&#39; || message.userRole === &#39;TSM&#39; || message.userRole === &#39;CM&#39; " aria-hidden="true" class="ng-hide">Boris Sionov (TTL)</span>
+            <span ng-show="message.userRole === null" aria-hidden="true" class="ng-hide">Boris Sionov</span>
+        </span>
+        <div class="message-container">
+          <p class="full-width" ng-class="{ deleted: message.deleted}" html-compile-unsafe="message.message | escape | linkyUnsanitizedWithQRcode | convertNewline">Hello johnny,<br>can you please add the correct link at LINK TO THE ITEM TESTED <br><br><br>Thanks,<br>Boris</p>
+                          <!---->
+        </div>
+    </blockquote><!---->
+</span>
+            </div><!---->
+
+            <!---->
+
+        </div><!---->
+  </div>
+</div>
+
+</div>
+
+  </div><!---->
+</div>
+</issue>
+</test-cycle-issue>
+</ta-test-cycle-tab-issue-details-route><!----><!----></ui-view><!---->
+<!----><!---->
+</ta-test-cycle-tab-issues-route><!----><!----></ui-view><!---->
+    </div>
+  </div>
+</div><!----><!---->
+
+<!---->
+</ta-test-cycle-route><!----><!----></ui-view><!---->
+  </ng-transclude>
+      </div>
+    </main>
+  </div><!---->
+</div>
+</content-and-sidebar>
+<!----><!---->
+
+<!---->
+</tester-app>
+<script src="https://platform.utest.com/runtime.c3808146fe812df6.js" type="module"></script><script src="https://platform.utest.com/polyfills.5a1fde7ed9e8c697.js" type="module"></script><script src="./Test Cycle - Issue Details - uTest_files/scripts.93886a4e95817909.js.download" defer=""></script><script src="https://platform.utest.com/main.aceb80798021de29.js" type="module"></script>
+
+<textarea aria-hidden="true" tabindex="-1" style="position: absolute; top: -999px; right: auto; bottom: auto;left: 0; overflow: hidden; -webkit-box-sizing: content-box;-moz-box-sizing: content-box; box-sizing: content-box;min-height: 0 !important; height: 0 !important; padding: 0;word-wrap: break-word; border: 0;font-family:proxima-nova, sans-serif;font-size:12px;font-weight:400;font-style:normal;letter-spacing:normal;line-height:16.8px;text-transform:none;word-spacing:0px;text-indent:0px;"></textarea></body></html>
